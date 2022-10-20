@@ -1,6 +1,10 @@
 import '../assets/styles/navbar.css';
 import Logo from '../assets/images/logo-bo-512.png';
 import { useEffect } from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBars, faHeart, faHome, faSearch, faShoppingCart, faUser } from '@fortawesome/free-solid-svg-icons'
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import { Badge } from '@mui/material';
 
 const Navbar = () => {
 
@@ -22,25 +26,41 @@ const Navbar = () => {
 
   return (
     <>
-       <div className="top-navbar">
+      <div className="top-navbar">
         <div className="logo">
           <img src={Logo} alt="Artelak" height="50px" />
         </div>
         <div className="search">
           <form action="" className="search-bar">
-            <input
-              type="text"
-              placeholder="Buscar productos (e.j. queso, leche, ...)"
-            />
+            <input type="text" placeholder="Buscar productos (e.j. queso)" />
             <button type="submit">
-              <ion-icon name="search"></ion-icon>
+              <FontAwesomeIcon icon={faSearch} />
             </button>
           </form>
         </div>
         <div className="icons">
-          <a href="" className="fa fa-user"></a>
-          <a href="" className="fa fa-heart"></a>
-          <a href="" className="fa fa-shopping-cart"></a>
+          <a href="" className="fa">
+            <FontAwesomeIcon icon={faUser} />
+          </a>
+          <a href="" className="fa">
+            <FontAwesomeIcon icon={faHeart} />
+          </a>
+          <a href="" className="fa">
+            <Badge
+              badgeContent={1}
+              sx={{
+                "& .MuiBadge-badge": {
+                  color: "white",
+                  backgroundColor: "#AF7C58",
+                },
+              }}
+            >
+              <ShoppingCartIcon sx={{ fontSize: "1.3em" }} />
+            </Badge>
+          </a>
+          <a href="" className="fa">
+            <FontAwesomeIcon icon={faBars} />
+          </a>
         </div>
       </div>
       <div className="bottom-navbar">
@@ -48,7 +68,7 @@ const Navbar = () => {
           <li className="list active">
             <a>
               <span className="icon">
-                <ion-icon name="home"></ion-icon>
+                <FontAwesomeIcon icon={faHome} />
               </span>
               <span className="text">Inicio</span>
             </a>
@@ -56,7 +76,7 @@ const Navbar = () => {
           <li className="list">
             <a>
               <span className="icon">
-                <ion-icon name="person"></ion-icon>
+                <FontAwesomeIcon icon={faUser} />
               </span>
               <span className="text">Ingresar</span>
             </a>
@@ -64,7 +84,7 @@ const Navbar = () => {
           <li className="list">
             <a>
               <span className="icon">
-                <ion-icon name="heart"></ion-icon>
+                <FontAwesomeIcon icon={faHeart} />
               </span>
               <span className="text">Favoritos</span>
             </a>
@@ -72,7 +92,17 @@ const Navbar = () => {
           <li className="list">
             <a>
               <span className="icon">
-                <ion-icon name="cart"></ion-icon>
+                <Badge
+                  badgeContent={1}
+                  sx={{
+                    "& .MuiBadge-badge": {
+                      color: "white",
+                      backgroundColor: "#AF7C58",
+                    },
+                  }}
+                >
+                  <ShoppingCartIcon sx={{ fontSize: "1.3em" }} />
+                </Badge>
               </span>
               <span className="text">Carrito</span>
             </a>
@@ -80,9 +110,9 @@ const Navbar = () => {
           <li className="list">
             <a>
               <span className="icon">
-                <ion-icon name="settings-outline"></ion-icon>
+                <FontAwesomeIcon icon={faBars} />
               </span>
-              <span className="text">Settings</span>
+              <span className="text">Menú</span>
             </a>
           </li>
           <div className="indicator"></div>

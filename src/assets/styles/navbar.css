@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900');
+@import url('https://fonts.googleapis.com/css?family=Nunito:100,200,300,400,500,600,700,800,900');
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat',sans-serif;
+    font-family: 'Nunito',sans-serif;
 }
 
 :root{
@@ -17,12 +17,16 @@ body{
 
 .top-navbar {
     background-color: #12284C;
+    position: fixed;
+    top: 0;
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     padding: 0 25px;
     height: 80px;
     align-items: center;
     text-align: center;
+    z-index: 10;
 }
 
 .logo img {
@@ -35,8 +39,9 @@ body{
     background: white;
     display: flex;
     align-items: center;
-    border-radius: 60px;
     padding: 0 0 0 0;
+    background: white;
+    border-radius: 20px;
 }
 
 ::placeholder{
@@ -47,22 +52,24 @@ body{
     font-size: 20px;
     border: none;
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
+    min-width: 40px;
+    min-height: 40px;
     color: white;
     background: #AF7C58;
     cursor: pointer;
+    border-color: white;
 }
 
 .search-bar input {
-    height: 35px;
+    height: 40px;
     width: 100%;
     border: none;
     outline: none;
     padding: 10px;
     padding-left: 15px;
     font-size: 18px;
-    border-radius: 60px;
+    background-color: white;
+    border-radius: 20px;
 }
 
 .icons {
@@ -72,7 +79,7 @@ body{
 .icons .fa {
     color: white;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 1.5em;
     padding: 0 15px;
     transition: 0.6s;
 }
@@ -85,7 +92,7 @@ body{
     display: none;
 }    
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 702px) {
     
     .top-navbar {
         height: 140px;
@@ -93,15 +100,9 @@ body{
         grid-template-rows: repeat(2,1fr);
     }
 
-    .logo {
-
-    }
-
     .icons {
         display: none;
     }
-
-
 
     ion-icon {
         pointer-events: none;
@@ -118,6 +119,7 @@ body{
         align-items: center;
         border-top-left-radius: 0px;
         border-top-right-radius: 0px;
+        z-index: 10;
     }
     .bottom-navbar ul{
         display: flex;
@@ -149,6 +151,7 @@ body{
         text-align: center;
         transition: 0.5s;
         color: var(--clr);
+        margin-bottom: 20px;
     }
     .bottom-navbar ul li.active a .icon{
         transform: translateY(-32px);
@@ -157,15 +160,14 @@ body{
     .bottom-navbar ul li a .text{
         position: absolute;
         color: var(--clr);
-        font-weight: 400;
-        font-size: 0.75em;
         font-weight: bold;
+        font-size: 0.8em;
         letter-spacing: 0.05em;
         transition: 0.5s;
         opacity: 0;
         transform: translateY(20px);
-        background: white;
-        color: #12284C;
+        background: #AF7C58;
+        color: white;
         padding: 2px 7px;
         border-radius: 12px;
     }
