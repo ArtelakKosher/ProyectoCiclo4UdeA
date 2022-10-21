@@ -1,12 +1,12 @@
-import "../assets/styles/product-grid.css";
+import '../assets/styles/products-grid.css';
+//import "bootstrap/dist/css/bootstrap.min.css";
 import ProductCard from "./ProductCard";
-import "bootstrap/dist/css/bootstrap.min.css";
 import Box from "@mui/material/Box";
 import { styled } from "@mui/material/styles";
 import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
 import { Typography } from "@mui/material";
-import productData from "./productData";
+import ProductData from "./ProductData";
 
 const Item = styled(Paper)(({ theme }) => ({
   padding: theme.spacing(1),
@@ -14,9 +14,9 @@ const Item = styled(Paper)(({ theme }) => ({
   boxShadow: "none",
 }));
 
-const ProductGrid = () => {
+const ProductsGrid = () => {
   return (
-    <div className="section">
+    <div className='products-grid'>
       <Box m={10}>
         <Box
           m={0}
@@ -40,24 +40,24 @@ const ProductGrid = () => {
           </Typography>
         </Box>
         <Grid container spacing={6}>
-        {productData.map((productData) => (
-          <Grid item key={productData.id} xl={3} lg={4} md={6} sm={6}>
+        {ProductData.map((ProductData) => (
+          <Grid item key={ProductData.id} xl={3} lg={4} md={6} sm={6}>
             <Item>
                 <ProductCard
-                  key={productData.id}
-                  title={productData.title}
-                  subtitle={productData.subtitle}
-                  image={productData.image}
-                  category={productData.category}
-                  descriptionEs={productData.descriptionEs}
-                  descriptionEn={productData.descriptionEn}
+                  id={ProductData.id}
+                  title={ProductData.title}
+                  subtitle={ProductData.subtitle}
+                  image={ProductData.image}
+                  category={ProductData.category}
+                  descriptionEs={ProductData.descriptionEs}
+                  descriptionEn={ProductData.descriptionEn}
                   c
-                  ingredientsEn={productData.ingredientsEn}
-                  ingredientsEs={productData.ingredientsEs}
-                  price={productData.price}
-                  rating={productData.rating}
-                  timeLeft={productData.timeLeft}
-                  totalSales={productData.totalSales}
+                  ingredientsEn={ProductData.ingredientsEn}
+                  ingredientsEs={ProductData.ingredientsEs}
+                  price={ProductData.price}
+                  rating={ProductData.rating}
+                  timeLeft={ProductData.timeLeft}
+                  totalSales={ProductData.totalSales}
                 />
               
             </Item>
@@ -66,7 +66,7 @@ const ProductGrid = () => {
         </Grid>
       </Box>
     </div>
-  );
-};
+  )
+}
 
-export default ProductGrid;
+export default ProductsGrid;
