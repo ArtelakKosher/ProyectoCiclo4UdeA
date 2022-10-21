@@ -1,4 +1,4 @@
-const productData = [
+const ProductData = [
     {
       id: 1,
       title: "Queso tipo mozzarella",
@@ -180,4 +180,4 @@ const productData = [
       totalSales: 7479 
     }
   ];
-  export default productData;
+  export default ProductData;

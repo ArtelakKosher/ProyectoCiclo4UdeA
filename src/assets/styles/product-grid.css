@@ -1,9 +1,0 @@
-.section {
-    margin-top: 80px;
-}
-
-@media only screen and (max-width: 702px) {
-    .section {
-        margin-top: 140px;
-    }
-}
