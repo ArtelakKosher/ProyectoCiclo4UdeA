@@ -1,0 +1,9 @@
+$theme-colors: (
+  "artelak-blue": #12284C,
+  "artelak-lightblue": #dce0e5,
+  "artelak-ocre": #cc9e6a,
+  "artelak-lightocre": #f2d9c7
+);
+
+// Import Bootstrap and its default variables
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss"

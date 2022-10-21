@@ -55,7 +55,7 @@ body{
     min-width: 40px;
     min-height: 40px;
     color: white;
-    background: #AF7C58;
+    background: #cc9e6a;
     cursor: pointer;
     border-color: white;
 }
@@ -85,7 +85,7 @@ body{
 }
 
 .fa:hover{
-    color: #AF7C58;
+    color: #cc9e6a;
 }
 
 .bottom-navbar{
@@ -166,7 +166,7 @@ body{
         transition: 0.5s;
         opacity: 0;
         transform: translateY(20px);
-        background: #AF7C58;
+        background: #cc9e6a;
         color: white;
         padding: 2px 7px;
         border-radius: 12px;

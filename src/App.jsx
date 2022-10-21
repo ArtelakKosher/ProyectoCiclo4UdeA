@@ -1,12 +1,10 @@
-import { useState } from 'react'
-import Home from './pages/Home'
+import { useState } from "react";
+import Layout from "./components/layout/layout";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
-  return (
-    <Home />
-  )
+  return <Layout />;
 }
 
-export default App
+export default App;

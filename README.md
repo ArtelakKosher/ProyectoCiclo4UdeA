@@ -37,4 +37,18 @@ Para que puedas desarrollar el proyecto que se te planteó, la aplicación web d
 # Changelog
 
 - 08/10/2022 Creación del repositorio en GitHub
-- 20/10/2022 Se realiza la creación del frontend definiendo la página de productos y la creación del proyecto mediante vite, se utiliza Yarn para la administración de dependencias entre las que se instalan fontawesome, styled-components, mui, sass, react-redux, react-helmet, bootstrap, react-bootstrap, react-icons, react-router-dom. Se crean los componentes de Navbar, Footer, ProductCard, ProductData, ProductGrid. se crean las hojas de estilos en la carpeta styles dendro de assets, se cargan las imagenes de los logos dentro de assets en la carpeta images, se cargan las imagenes de los productos en la ruta /public/images/Products, se crea el favicon de la pagina en la ruta /public/images. Se enlaza el proyecto a Vercel
+- 21/10/2022 Se realiza la creación del frontend definiendo la página de productos y la creación del proyecto mediante vite, se utiliza Yarn para la administración de dependencias entre las que se instalan fontawesome, styled-components, mui, sass, react-redux, react-helmet, bootstrap, react-bootstrap, react-icons, react-router-dom. Se crean los componentes de Navbar, Footer, ProductCard, ProductData, ProductGrid. se crean las hojas de estilos en la carpeta styles dendro de assets, se cargan las imagenes de los logos dentro de assets en la carpeta images, se cargan las imagenes de los productos en la ruta /public/images/Products, se crea el favicon de la pagina en la ruta /public/images. Se enlaza el proyecto a Vercel. Se crea la siguiente estructura de rutas:
+
+```
+<Routes>
+        <Route path='/' element={<Navigate to='/home' />} />
+        <Route path='/home' element={<Home />} />
+        <Route path='/products' element={<AllProducts />} />
+        <Route path='/products/:id' element={<ProductDetails />} />
+        <Route path='/cart' element={<Cart />} />
+        <Route path='/checkout' element={<Checkout />} />
+        <Route path='/login' element={<Login />} />
+        <Route path='/register' element={<Register />} />
+        <Route path='/contact' element={<Contact />} />
+</Routes>
+```

@@ -48,7 +48,7 @@ const StyledFavoriteIcon = styled(FavoriteIcon, {
   slot: "Wrapper",
 })({
   color: "#12284c",
-  "&:hover": { color: "#af7c58" },
+  "&:hover": { color: "#cc9e6a" },
 });
 
 const StyledShareIcon = styled(ShareIcon, {
@@ -56,7 +56,7 @@ const StyledShareIcon = styled(ShareIcon, {
   slot: "Wrapper",
 })({
   color: "#12284c",
-  "&:hover": { color: "#af7c58" },
+  "&:hover": { color: "#cc9e6a" },
 });
 
 const StyledShoppingBagIcon = styled(ShoppingBagIcon, {
@@ -64,7 +64,7 @@ const StyledShoppingBagIcon = styled(ShoppingBagIcon, {
   slot: "Wrapper",
 })({
   color: "#12284c",
-  "&:hover": { color: "#af7c58" },
+  "&:hover": { color: "#cc9e6a" },
 });
 
 const ProductCard = ({
