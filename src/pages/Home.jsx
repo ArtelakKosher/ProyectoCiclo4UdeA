@@ -8,7 +8,7 @@ const Home = () => {
   return (
     // el de abajo es el fragmento
     <div>
-      <Navbar />
+
       <ProductsGrid />
       <Footer />
     </div>
