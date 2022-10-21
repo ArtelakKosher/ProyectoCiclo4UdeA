@@ -6,7 +6,7 @@ import { styled } from "@mui/material/styles";
 import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
 import { Typography } from "@mui/material";
-import productData from "./productData";
+import ProductData from "./ProductData";
 
 const Item = styled(Paper)(({ theme }) => ({
   padding: theme.spacing(1),
@@ -40,24 +40,24 @@ const ProductsGrid = () => {
           </Typography>
         </Box>
         <Grid container spacing={6}>
-        {productData.map((productData) => (
-          <Grid item key={productData.id} xl={3} lg={4} md={6} sm={6}>
+        {ProductData.map((ProductData) => (
+          <Grid item key={ProductData.id} xl={3} lg={4} md={6} sm={6}>
             <Item>
                 <ProductCard
-                  id={productData.id}
-                  title={productData.title}
-                  subtitle={productData.subtitle}
-                  image={productData.image}
-                  category={productData.category}
-                  descriptionEs={productData.descriptionEs}
-                  descriptionEn={productData.descriptionEn}
+                  id={ProductData.id}
+                  title={ProductData.title}
+                  subtitle={ProductData.subtitle}
+                  image={ProductData.image}
+                  category={ProductData.category}
+                  descriptionEs={ProductData.descriptionEs}
+                  descriptionEn={ProductData.descriptionEn}
                   c
-                  ingredientsEn={productData.ingredientsEn}
-                  ingredientsEs={productData.ingredientsEs}
-                  price={productData.price}
-                  rating={productData.rating}
-                  timeLeft={productData.timeLeft}
-                  totalSales={productData.totalSales}
+                  ingredientsEn={ProductData.ingredientsEn}
+                  ingredientsEs={ProductData.ingredientsEs}
+                  price={ProductData.price}
+                  rating={ProductData.rating}
+                  timeLeft={ProductData.timeLeft}
+                  totalSales={ProductData.totalSales}
                 />
               
             </Item>
