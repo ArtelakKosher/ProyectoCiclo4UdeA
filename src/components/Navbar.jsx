@@ -107,7 +107,14 @@ const Navbar = () => {
               <span className="text">Carrito</span>
             </a>
           </li>
-          
+          <li className="list">
+            <a>
+              <span className="icon">
+                <FontAwesomeIcon icon={faBars} />
+              </span>
+              <span className="text">Menú</span>
+            </a>
+          </li>
           <div className="indicator"></div>
         </ul>
       </div>
