@@ -68,7 +68,7 @@ const Navbar = () => {
         <ul>
           <li className="list active">
             <a>
-              <span className="icon">
+              <span className="bottom-icon">
                 <FontAwesomeIcon icon={faHome} />
               </span>
               <span className="text">Inicio</span>
@@ -76,7 +76,7 @@ const Navbar = () => {
           </li>
           <li className="list">
             <a>
-              <span className="icon">
+              <span className="bottom-icon">
                 <FontAwesomeIcon icon={faUser} />
               </span>
               <span className="text">Ingresar</span>
@@ -84,7 +84,7 @@ const Navbar = () => {
           </li>
           <li className="list">
             <a>
-              <span className="icon">
+              <span className="bottom-icon">
                 <FontAwesomeIcon icon={faHeart} />
               </span>
               <span className="text">Favoritos</span>
@@ -92,7 +92,7 @@ const Navbar = () => {
           </li>
           <li className="list">
             <a>
-              <span className="icon">
+              <span className="bottom-icon">
                 <Badge
                   badgeContent={1}
                   sx={{
@@ -110,7 +110,7 @@ const Navbar = () => {
           </li>
           <li className="list">
             <a>
-              <span className="icon">
+              <span className="bottom-icon">
                 <FontAwesomeIcon icon={faBars} />
               </span>
               <span className="text">Menú</span>

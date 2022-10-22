@@ -123,7 +123,8 @@ body{
     }
     .bottom-navbar ul{
         display: flex;
-        width: 350px;
+        width: fit-content;
+        margin-right: 33px;
     }
     .bottom-navbar ul li{
         position: relative;
@@ -143,7 +144,7 @@ body{
         font-weight: 500;
         cursor: default;
     }
-    .bottom-navbar ul li a .icon{
+    .bottom-navbar ul li a .bottom-icon{
         position: relative;
         display: block;
         line-height: 75px;
@@ -153,7 +154,7 @@ body{
         color: var(--clr);
         margin-bottom: 20px;
     }
-    .bottom-navbar ul li.active a .icon{
+    .bottom-navbar ul li.active a .bottom-icon{
         transform: translateY(-32px);
         color: white;
     }
