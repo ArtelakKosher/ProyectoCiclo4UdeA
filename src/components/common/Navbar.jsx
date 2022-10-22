@@ -43,10 +43,10 @@ const Navbar = () => {
           <a href="/login" className="fa">
             <FontAwesomeIcon icon={faUser} />
           </a>
-          <a href="" className="fa">
+          <a href="/favorites" className="fa">
             <FontAwesomeIcon icon={faHeart} />
           </a>
-          <a href="" className="fa">
+          <a href="/cart" className="fa">
             <Badge
               badgeContent={1}
               sx={{
