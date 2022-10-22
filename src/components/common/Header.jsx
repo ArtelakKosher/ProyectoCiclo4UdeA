@@ -1,14 +1,9 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/scss/bootstrap.scss";
 import "../../assets/styles/custom-colors.css";
+import "../../assets/styles/header.css";
 
-import {
-  MDBContainer,
-  MDBNavbar,
-  MDBNavbarNav,
-  MDBNavbarItem,
-  MDBNavbarLink,
-} from "mdb-react-ui-kit";
+import { NavLink} from "react-router-dom";
 
 const nav__links = [
   {
@@ -32,19 +27,27 @@ const nav__links = [
 const Header = () => {
   return (
     <header className="header">
-      <nav class="navbar navbar-expand-lg navbar-light bg-artelak-lightblue">
-        <div class="container-fluid">
-          <ul class="navbar-nav">
-            {nav__links.map((item, index) => (
-              <li class="nav-item" key={index}>
-                <a class="nav-link" aria-current="page" href={item.path}>
+      <div className="nav__container">
+        <div className="nav__wrapper">
+
+          {/* ======= menu ======= */}
+          <div className="navigation">
+            <div className="menu">
+              {nav__links.map((item, index) => (
+                <NavLink
+                  to={item.path}
+                  key={index}
+                  className={(navClass) =>
+                    navClass.isActive ? "active__menu" : ""
+                  }
+                >
                   {item.display}
-                </a>
-              </li>
-            ))}
-          </ul>
+                </NavLink>
+              ))}
+            </div>
+          </div>
         </div>
-      </nav>
+      </div>
     </header>
   );
 };
