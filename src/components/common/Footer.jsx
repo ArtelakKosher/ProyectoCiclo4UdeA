@@ -1,5 +1,5 @@
 import "../../assets/styles/footer.css";
-import Logo from "../../assets/images/logo-ao.png";
+import Logo from "../../assets/images/artelak512px.png";
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faHome, faPhone } from "@fortawesome/free-solid-svg-icons";
