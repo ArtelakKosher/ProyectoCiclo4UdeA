@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import "../../assets/styles/navbar.css";
-import Logo from "../../assets/images/logo-bo-512.png";
+import Logo from "../../assets/images/artelak20cm.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBars,
