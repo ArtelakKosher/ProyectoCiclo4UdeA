@@ -5,7 +5,7 @@ import CardMedia from "@mui/material/CardMedia";
 import CardContent from "@mui/material/CardContent";
 import CardActions from "@mui/material/CardActions";
 import IconButton from "@mui/material/IconButton";
-import Typography from "@mui/material/Typography";
+import Typography from "@mui/joy/Typography";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import ShareIcon from "@mui/icons-material/Share";
 import ShoppingBagIcon from "@mui/icons-material/ShoppingBag";
@@ -48,7 +48,7 @@ const StyledFavoriteIcon = styled(FavoriteIcon, {
   slot: "Wrapper",
 })({
   color: "#12284c",
-  "&:hover": { color: "#af7c58" },
+  "&:hover": { color: "#cc9e6a" },
 });
 
 const StyledShareIcon = styled(ShareIcon, {
@@ -56,7 +56,7 @@ const StyledShareIcon = styled(ShareIcon, {
   slot: "Wrapper",
 })({
   color: "#12284c",
-  "&:hover": { color: "#af7c58" },
+  "&:hover": { color: "#cc9e6a" },
 });
 
 const StyledShoppingBagIcon = styled(ShoppingBagIcon, {
@@ -64,7 +64,7 @@ const StyledShoppingBagIcon = styled(ShoppingBagIcon, {
   slot: "Wrapper",
 })({
   color: "#12284c",
-  "&:hover": { color: "#af7c58" },
+  "&:hover": { color: "#cc9e6a" },
 });
 
 const ProductCard = ({

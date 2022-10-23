@@ -1,9 +1,13 @@
-import '../assets/styles/footer.css';
-import Logo from '../assets/images/logo-ao.png';
-import React from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope, faHome, faPhone } from '@fortawesome/free-solid-svg-icons';
-import { faFacebook, faInstagram, faWhatsapp } from "@fortawesome/free-brands-svg-icons"
+import "../../assets/styles/footer.css";
+import Logo from "../../assets/images/logos/artelak512px.png";
+import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope, faHome, faPhone } from "@fortawesome/free-solid-svg-icons";
+import {
+  faFacebook,
+  faInstagram,
+  faWhatsapp,
+} from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
   return (
@@ -36,13 +40,22 @@ const Footer = () => {
           <h2>Contácto</h2>
           <a href="#">
             {" "}
-            <i className="fas"><FontAwesomeIcon icon={faHome} /></i> Bogotá, Colombia
+            <i className="fas">
+              <FontAwesomeIcon icon={faHome} />
+            </i>{" "}
+            Bogotá, Colombia
           </a>
           <a href="#">
-            <i className="fas"><FontAwesomeIcon icon={faEnvelope} /></i> e-mail@correo.com
+            <i className="fas">
+              <FontAwesomeIcon icon={faEnvelope} />
+            </i>{" "}
+            e-mail@correo.com
           </a>
           <a href="#">
-            <i className="fas"><FontAwesomeIcon icon={faPhone} /></i> +57 310 310 31 31
+            <i className="fas">
+              <FontAwesomeIcon icon={faPhone} />
+            </i>{" "}
+            +57 310 310 31 31
           </a>
         </div>
 
@@ -50,13 +63,22 @@ const Footer = () => {
           <h2>Redes Sociales</h2>
           <a href="#">
             {" "}
-            <i className="fab"><FontAwesomeIcon icon={faFacebook} /></i> Facebook
+            <i className="fab">
+              <FontAwesomeIcon icon={faFacebook} />
+            </i>{" "}
+            Facebook
           </a>
           <a href="#">
-            <i className="fab"><FontAwesomeIcon icon={faInstagram} /></i> Instagram
+            <i className="fab">
+              <FontAwesomeIcon icon={faInstagram} />
+            </i>{" "}
+            Instagram
           </a>
           <a href="#">
-            <i className="fab"><FontAwesomeIcon icon={faWhatsapp} /></i> Whatsapp
+            <i className="fab">
+              <FontAwesomeIcon icon={faWhatsapp} />
+            </i>{" "}
+            Whatsapp
           </a>
         </div>
       </div>
@@ -69,6 +91,6 @@ const Footer = () => {
       </div>
     </footer>
   );
-}
+};
 
-export default Footer
+export default Footer;

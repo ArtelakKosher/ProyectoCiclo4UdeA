@@ -1,8 +1,10 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:100,200,300,400,500,600,700,800,900");
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
     text-decoration: none;
 }
 
@@ -49,7 +51,7 @@ footer{
 
 .box__footer h2{
     margin-bottom: 30px;
-    color: #AF7C58;
+    color: #cc9e6a;
     font-weight: 700;
 }
 

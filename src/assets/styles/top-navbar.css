@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:100,200,300,400,500,600,700,800,900");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+:root {
+  --artelak-blue: #12284c;
+  --artelak-lightblue: #dce0e5;
+  --artelak-ocre: #cc9e6a;
+  --artelak-lightocre: #f2d9c7;
+}
+
+.top-navbar {
+  background-color: var(--artelak-blue);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0 25px;
+  height: 80px;
+  align-items: center;
+  text-align: center;
+  z-index: 10;
+}
+
+.logo img {
+  height: "50px";
+}
+
+.search-bar {
+  height: 40px;
+  width: 100%;
+  background: white;
+  display: flex;
+  align-items: center;
+  padding: 0 0 0 0;
+  background: white;
+  border-radius: 20px;
+}
+
+::placeholder {
+  color: var(--artelak-blue);
+}
+
+.search-bar button {
+  font-size: 20px;
+  border: none;
+  border-radius: 50%;
+  min-width: 40px;
+  min-height: 40px;
+  color: white;
+  background: var(--artelak-ocre);
+  cursor: pointer;
+  border-color: white;
+}
+
+.search-bar input {
+  height: 40px;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 10px;
+  padding-left: 15px;
+  font-size: 18px;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.icons {
+  text-align: center;
+}
+
+.icons .fa {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5em;
+  padding: 0 15px;
+  transition: 0.6s;
+}
+
+.fa:hover {
+  color: var(--artelak-ocre);
+}
+
+.bottom-navbar {
+  display: none;
+}
+
+@media only screen and (max-width: 708px) {
+  .top-navbar {
+    height: 140px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .icons {
+    display: none;
+  }
+
+  ion-icon {
+    pointer-events: none;
+  }
+}
