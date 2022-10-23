@@ -1,9 +1,0 @@
-main {
-    margin-top: 80px;
-}
-
-@media only screen and (max-width: 702px) {
-    main {
-        margin-top: 140px;
-    }
-}

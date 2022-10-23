@@ -1,18 +1,14 @@
 import React from "react";
-
-import Navbar from "../common/Navbar";
+import "../../assets/styles/main.css";
+import Routes from "../../routes/Routers";
 import Header from "../common/Header";
 import Footer from "../common/Footer";
-import Routes from "../../routes/Routers";
-
-import "../../assets/styles/main.css";
 
 const layout = () => {
   return (
     <>
-      <Navbar />
+      <Header />
       <main>
-        <Header />
         <Routes />
       </main>
       <Footer />
