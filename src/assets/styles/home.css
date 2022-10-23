@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:100,200,300,400,500,600,700,800,900');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans',sans-serif;
+}
+
+:root {
+  --artelak-blue: #12284c;
+  --artelak-lightblue: #dce0e5;
+  --artelak-ocre: #cc9e6a;
+  --artelak-lightocre: #f2d9c7;
+}
+ 
+  .artelak__title span {
+    color: var(--artelak-ocre);
+  }
+  
+  .artelak__desc {
+    color: var(--artelak-blue);
+    line-height: 28px;
+  }
+  
+  .choose__us-title {
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: var(--artelak-blue);
+  }
+  
+  .choose__us-title i {
+    font-weight: 500 !important;
+    color: var(--artelak-ocre);
+  }
+  
+  .choose__us-desc {
+    color: var(--artelak-blue);
+  }
+ 
+  @media only screen and (max-width: 768px) {
+    .order-now__content h5 {
+      font-size: 1rem;
+    }
+  
+    .order-now__content p {
+      font-size: 0.8rem;
+      line-height: 25px;
+    }
+  
+    .order-now__title {
+      font-size: 1.5rem;
+      line-height: 40px;
+    }
+  
+    .order-now__btns button {
+      padding: 5px 15px;
+      font-size: 0.7rem;
+    }
+  
+    .order-now__service p {
+      font-size: 0.7rem !important;
+    }
+  
+    .artelak__desc {
+      font-size: 0.8rem;
+      margin-bottom: 0;
+    }
+    .choose__us-title {
+      font-size: 0.8rem;
+    }
+  
+    .choose__us-desc {
+      font-size: 0.7rem;
+    }
+  
+  }
+  @media only screen and (max-width: 576px) {
+    .order-now__content {
+      text-align: center;
+    }
+  
+    .order-now__btns {
+      justify-content: center;
+    }
+  
+    .order-now__service {
+      justify-content: center;
+    }
+    .why__choose-us {
+      padding-top: 0 !important;
+    }
+  }
+  
