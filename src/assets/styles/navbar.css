@@ -1,0 +1,45 @@
+:root {
+  --artelak-blue: #12284c;
+  --artelak-lightblue: #dce0e5;
+  --artelak-ocre: #cc9e6a;
+  --artelak-lightocre: #f2d9c7;
+}
+
+.nav__container {
+  margin-top: 80px;
+  height: 40px;
+  line-height: 40px;
+  background: var(--artelak-lightblue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu a {
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: var(--artelak-blue);
+  transition: 0.3s;
+  text-decoration: none;
+  margin: 20px;
+}
+
+.menu a:hover {
+  color: var(--artelak-ocre);
+}
+
+.active__menu {
+  color: var(--artelak-ocre) !important;
+}
+
+@media only screen and (max-width: 708px) {
+  .nav__container {
+    margin-top: 140px;
+  }
+}

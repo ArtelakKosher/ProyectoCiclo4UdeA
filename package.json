@@ -1,5 +1,5 @@
 {
-  "name": "artelak",
+  "name": "artelak-front",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -9,14 +9,21 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emotion/react": "^11.10.4",
+    "@emotion/styled": "^11.10.4",
     "@fortawesome/fontawesome-svg-core": "^6.2.0",
-    "@fortawesome/free-regular-svg-icons": "^6.2.0",
+    "@fortawesome/free-brands-svg-icons": "^6.2.0",
     "@fortawesome/free-solid-svg-icons": "^6.2.0",
     "@fortawesome/react-fontawesome": "^0.2.0",
-    "@material-ui/core": "^4.12.4",
-    "@material-ui/icons": "^4.11.3",
+    "@mui/icons-material": "^5.10.9",
+    "@mui/joy": "^5.0.0-alpha.50",
+    "@mui/material": "^5.10.10",
+    "@mui/styles": "^5.10.10",
     "react": "^18.2.0",
+    "react-currency-format": "^1.1.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^4.6.0",
+    "react-router-dom": "^6.4.2",
     "styled-components": "^5.3.6"
   },
   "devDependencies": {
