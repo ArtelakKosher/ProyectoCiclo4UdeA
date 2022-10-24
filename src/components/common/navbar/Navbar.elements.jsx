@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { NavLink } from "react-router-dom"; 
+import { NavLink } from "react-router-dom";
 
 export const NavbarContainer = styled.div`
   width: 100%;
@@ -89,10 +89,10 @@ export const SearchBarButton = styled.button`
 `;
 
 export const Menu = styled.ul`
-  align-items: center;
-  justify-content: center;
-
-  display: flex;
+  display: flex; /* establish flex container */
+  flex-direction: column; /* make main axis vertical */
+  justify-content: center; /* center items vertically, in this case */
+  align-items: center; /* center items horizontally, in this case */
   width: fit-content;
   height: calc(100vh - 80px);
   position: absolute;
@@ -130,7 +130,7 @@ export const MenuItem = styled.li`
   display: flex;
   justify-content: center;
   align-items: center;
- 
+
   &:hover {
     color: var(--artelak-blue);
   }
@@ -152,15 +152,15 @@ export const IconContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  
+
   @media screen and (max-width: 600px) {
     padding-right: 1rem;
   }
 `;
 
 export const IconNavLink = styled(NavLink)`
- color: white;
- margin: 10px;
+  color: white;
+  margin: 10px;
 `;
 
 export const SearchContainer = styled.div`

@@ -3,7 +3,7 @@ import React from "react";
 import Helmet from "../components/helmet/Helmet";
 import { Container, Row, Col, ListGroup, ListGroupItem } from "reactstrap";
 
-import orderNowImg from "../assets/images/delivery-person-getting-parcel-out-for-delivery.jpg";
+import orderNowImg from "../assets/images/content/delivery72RESO.png";
 import "../assets/styles/order-now-section.css";
 import "bootstrap/dist/css/bootstrap.css";
 
