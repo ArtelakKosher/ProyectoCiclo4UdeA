@@ -36,6 +36,10 @@ export const Logo = styled.div`
 
 export const ImgLogo = styled.img`
   height: 50px;
+
+  @media screen and (max-width: 388px) {
+    height: 40px;
+  }
 `;
 
 export const Search = styled.div`
