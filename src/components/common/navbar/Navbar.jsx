@@ -58,7 +58,7 @@ const Navbar = () => {
           </Search>
 
           <IconContainer>
-            <IconNavLink to="/home">
+            <IconNavLink to="/home" style={}>
               <FaHome size={25} />
             </IconNavLink>
 

@@ -17,7 +17,7 @@
 
 footer{
     width: 100%;
-    padding: 50px 0px;
+    padding: 5px 0px;
     background-image: url(../images/background-footer.svg);
     background-size: cover;
 }
@@ -88,8 +88,8 @@ footer{
     background-color: #12284C;
 }
 
-@media only screen and (max-width: 702px) {
+@media only screen and (max-width: 600px) {
     footer {
-        margin-bottom: 60px;
+        margin-bottom: 0px;
     }
 }

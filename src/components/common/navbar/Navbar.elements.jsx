@@ -161,6 +161,11 @@ export const IconContainer = styled.div`
 export const IconNavLink = styled(NavLink)`
   color: white;
   margin: 10px;
+
+  &:hover {
+    cursor: pointer;
+    color: var(--artelak-ocre);
+  }
 `;
 
 export const SearchContainer = styled.div`
