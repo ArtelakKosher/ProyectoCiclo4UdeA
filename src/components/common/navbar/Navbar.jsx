@@ -81,22 +81,22 @@ const Navbar = () => {
 
           <Menu click={click}>
             <MenuNavLink to="/home">
-              <MenuItem onClick={() => ChangeClick()}>INICIO</MenuItem>
+              <MenuItem onClick={() => ChangeClick()}>Inicio</MenuItem>
             </MenuNavLink>
             <MenuNavLink to="/products">
-              <MenuItem onClick={() => ChangeClick()}>PRODUCTOS</MenuItem>
+              <MenuItem onClick={() => ChangeClick()}>Productos</MenuItem>
             </MenuNavLink>
             <MenuNavLink to="/login">
-              <MenuItem onClick={() => ChangeClick()}>INGRESAR</MenuItem>
+              <MenuItem onClick={() => ChangeClick()}>Ingresar</MenuItem>
             </MenuNavLink>
             <MenuNavLink to="/favorites">
-              <MenuItem onClick={() => ChangeClick()}>FAVORITOS</MenuItem>
+              <MenuItem onClick={() => ChangeClick()}>Favoritos</MenuItem>
             </MenuNavLink>
             <MenuNavLink to="/cart">
-              <MenuItem onClick={() => ChangeClick()}>CARRITO</MenuItem>
+              <MenuItem onClick={() => ChangeClick()}>Carrito</MenuItem>
             </MenuNavLink>
             <MenuNavLink to="/contact">
-              <MenuItem onClick={() => ChangeClick()}>CONTÁCTO</MenuItem>
+              <MenuItem onClick={() => ChangeClick()}>Contacto</MenuItem>
             </MenuNavLink>
           </Menu>
         </NavbarWrapper>

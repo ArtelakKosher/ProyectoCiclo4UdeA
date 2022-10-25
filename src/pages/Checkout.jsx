@@ -1,7 +1,12 @@
 import React from "react";
+import MetaData from "../components/metadata/MetaData";
 
 const Checkout = () => {
-  return <div>Checkout</div>;
+  return (
+    <>
+      <MetaData title="Pagar" />
+    </>
+  );
 };
 
 export default Checkout;

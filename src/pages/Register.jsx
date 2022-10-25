@@ -1,7 +1,12 @@
 import React from "react";
+import MetaData from "../components/metadata/MetaData";
 
 const Register = () => {
-  return <div>Register</div>;
+  return (
+    <>
+      <MetaData title="Registro" />
+    </>
+  );
 };
 
 export default Register;

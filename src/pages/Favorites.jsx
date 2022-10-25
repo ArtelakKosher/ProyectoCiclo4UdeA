@@ -1,9 +1,12 @@
 import React from 'react'
+import MetaData from "../components/metadata/MetaData";
 
 const Favorites = () => {
   return (
-    <div>Favorites</div>
-  )
+    <>
+      <MetaData title="Favoritos" />
+    </>
+  );
 }
 
 export default Favorites

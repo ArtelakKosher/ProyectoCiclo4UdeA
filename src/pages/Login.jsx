@@ -1,7 +1,12 @@
 import React from "react";
+import MetaData from "../components/metadata/MetaData";
 
 const Login = () => {
-  return <div>Login</div>;
+  return (
+    <>
+      <MetaData title="Ingresar" />
+    </>
+  );
 };
 
 export default Login;
