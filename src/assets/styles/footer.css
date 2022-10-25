@@ -12,12 +12,11 @@
     --color-esqueleto:#EFF3F5;
 }
 
-
 /*Aquí debajo va el FOOTER*/
 
 footer{
     width: 100%;
-    padding: 5px 0px;
+    padding: 20px 0px;
     background-image: url(../images/background-footer.svg);
     background-size: cover;
 }

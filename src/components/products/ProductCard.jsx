@@ -1,4 +1,5 @@
 import * as React from "react";
+import Button from "@mui/material/Button";
 import Card from "@mui/material/Card";
 import CardHeader from "@mui/material/CardHeader";
 import CardMedia from "@mui/material/CardMedia";
@@ -6,14 +7,15 @@ import CardContent from "@mui/material/CardContent";
 import CardActions from "@mui/material/CardActions";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/joy/Typography";
-import FavoriteIcon from "@mui/icons-material/Favorite";
 import ShareIcon from "@mui/icons-material/Share";
-import ShoppingBagIcon from "@mui/icons-material/ShoppingBag";
 import Rating from "@mui/material/Rating";
 import { styled } from "@mui/system";
 import { makeStyles } from "@mui/styles";
 import Box from "@mui/material/Box";
 import CurrencyFormat from "react-currency-format";
+import { Flag } from "semantic-ui-react";
+import "semantic-ui-css/semantic.min.css";
+import { Link } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -43,14 +45,6 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const StyledFavoriteIcon = styled(FavoriteIcon, {
-  name: "StyledFavoriteIcon",
-  slot: "Wrapper",
-})({
-  color: "#12284c",
-  "&:hover": { color: "#cc9e6a" },
-});
-
 const StyledShareIcon = styled(ShareIcon, {
   name: "StyledShareIcon",
   slot: "Wrapper",
@@ -59,8 +53,8 @@ const StyledShareIcon = styled(ShareIcon, {
   "&:hover": { color: "#cc9e6a" },
 });
 
-const StyledShoppingBagIcon = styled(ShoppingBagIcon, {
-  name: "StyledShoppingBagIcon",
+const StyledButton = styled(Button, {
+  name: "StyledButton",
   slot: "Wrapper",
 })({
   color: "#12284c",
@@ -95,7 +89,7 @@ const ProductCard = ({
       alignItems="center"
       justifyContent="center"
     >
-      <Card sx={{ maxWidth: 345 }}>
+      <Card sx={{ width: 280, height: 500 }}>
         <CardHeader
           action={
             <IconButton
@@ -121,14 +115,10 @@ const ProductCard = ({
               fontFamily: "Nunito Sans",
             }}
           >
-            Descripción: {descriptionEs}
-            <br />
-            Description: {descriptionEn}
+            <Flag name="es" />: {descriptionEs}
             <br />
             <br />
-            Ingredientes: {ingredientsEs}
-            <br />
-            Ingredients: {ingredientsEn}
+            <Flag name="us" />: {descriptionEn}
             <br />
             <br />
             <Box display="flex" justifyContent="flex-end">
@@ -170,18 +160,15 @@ const ProductCard = ({
             readOnly
             className={classes.leftAlignItem}
           />
-          <IconButton
-            aria-label="Agregar a favoritos"
-            className={classes.rightAlignItem}
-          >
-            <StyledFavoriteIcon />
-          </IconButton>
-          <IconButton
-            aria-label="Añadir al carrito"
-            className={classes.rightAlignItem}
-          >
-            <StyledShoppingBagIcon />
-          </IconButton>
+          <Link to="/home">
+            <StyledButton
+              size="small"
+              color="primary"
+              className={classes.leftAlignItem}
+            >
+              Ver detalles
+            </StyledButton>
+          </Link>
         </CardActions>
       </Card>
     </Box>
