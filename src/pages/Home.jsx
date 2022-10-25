@@ -1,6 +1,6 @@
 import React from "react";
 
-import MetaData from "../components/metadata/MetaData";
+import MetaData from "../components/layout/metadata/MetaData";
 import { Container, Row, Col, ListGroup, ListGroupItem } from "reactstrap";
 
 import orderNowImg from "../assets/images/content/delivery72RESO.png";
