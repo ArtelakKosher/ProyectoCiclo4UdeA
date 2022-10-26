@@ -16,7 +16,7 @@ export const getProducts = () => async(dispatch)=>{
 
         const {data} = await axios.get(`db/productsData.json`)
  
-        console.log(data)
+        {/* console.log(data) */}
         
         dispatch({
             type:ALL_PRODUCTS_SUCCESS,
