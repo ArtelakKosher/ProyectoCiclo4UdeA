@@ -1,4 +1,3 @@
-//import "bootstrap/dist/css/bootstrap.min.css";
 import ProductCard from "./ProductCard";
 import Box from "@mui/material/Box";
 import { styled } from "@mui/material/styles";
@@ -58,7 +57,7 @@ const ProductsGrid = () => {
           </Typography>
         </Box>
         <Grid container spacing={6}>
-          {ProductData.map((ProductData) => (
+          {products.map((ProductData) => (
             <Grid item key={ProductData.id} xl={3} lg={4} md={6} sm={6}>
               <Item>
                 <ProductCard
