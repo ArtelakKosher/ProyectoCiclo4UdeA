@@ -34,6 +34,8 @@ const ProductsGrid = () => {
     alert.success("Productos cargados");
   }, [dispatch]);
 
+  console.log(products)
+
   return (
     <>
       {loading ? (
