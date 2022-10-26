@@ -1,0 +1,21 @@
+{
+  "success": true,
+  "product": [
+    {
+      "id": 4,
+      "title": "Queso campesino",
+      "subtitle": "Entero 500gr.",
+      "image": "../images/products/quesos_frescos/Queso_tipo_campesino-Entero_500gr.png",
+      "category": "Quesos frescos",
+      "descriptionEs": "Queso fresco semi-duro.",
+      "descriptionEn": "Semi-duto.",
+      "ingredientsEs": "Leche fresca pasteurizada, sal, cuajo.",
+      "ingredientsEn": "Fresh pasteurized milk, salt, rennet.",
+      "price": 16499,
+      "hasTax": "no",
+      "rating": 5,
+      "timeLeft": 27,
+      "totalSales": 7479
+    }
+  ]
+}

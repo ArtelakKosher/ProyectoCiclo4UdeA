@@ -1,0 +1,21 @@
+{
+  "success": true,
+  "product": [
+    {
+      "id": 7,
+      "title": "Yogurt natural",
+      "subtitle": "150gr.",
+      "image": "../images/products/leche_y_yogures/Yogurt_natural-150gr.png",
+      "category": "Yogures",
+      "descriptionEs": "Nuestro auténtico y cremoso yogurt natural.",
+      "descriptionEn": "Yogurt natural cremoso bajo en azúcar.",
+      "ingredientsEs": "Leche fresca pasteurizada, cultivo.",
+      "ingredientsEn": " Fresh pasteurized milk, culture.",
+      "price": 2817,
+      "hasTax": "no",
+      "rating": 5,
+      "timeLeft": 27,
+      "totalSales": 7479
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "success": true,
+  "product": [
+    {
+      "id": 16,
+      "title": "Helado de cafe",
+      "subtitle": "Medio litro",
+      "image": "../images/products/postres_y_helados/Helado_artesanal_Cafe.png",
+      "category": "Postres y helados",
+      "descriptionEs": "Helado artesanal de cafe",
+      "descriptionEn": "artisanal ice cream.",
+      "ingredientsEs": "Crema de leche, leche condensada, y su sabor (cafe)",
+      "ingredientsEn": "Heavy cream, condensed milk and flavor (coffee).",
+      "price": 17852,
+      "hasTax": "no",
+      "rating": 5,
+      "timeLeft": 27,
+      "totalSales": 7479
+    }
+  ]
+}

@@ -24,12 +24,14 @@ const ProductsGrid = () => {
   const alert = useAlert();
 
   const dispatch = useDispatch();
+
   useEffect(() => {
     if (error) {
       return alert.error(error);
     }
 
     dispatch(getProducts());
+    alert.success("Productos cargados");
   }, [dispatch]);
 
   return (

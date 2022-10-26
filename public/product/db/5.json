@@ -1,0 +1,21 @@
+{
+  "success": true,
+  "product": [
+    {
+      "id": 5,
+      "title": "Cream Cheese ",
+      "subtitle": "Queso crema 220gr.",
+      "image": "../images/products/quesos_frescos/Queso_tipo_Cream cheese_220gr.png",
+      "category": "Quesos frescos",
+      "descriptionEs": "Queso esparcible alto en proteína.",
+      "descriptionEn": "Textura increíble, sin almidones ni espesantesa.",
+      "ingredientsEs": "Leche fresca pasteurizada, sal, cultivo, cuajo.",
+      "ingredientsEn": "Fresh pasteurized milk, salt, culture, rennet.",
+      "price": 11249,
+      "hasTax": "no",
+      "rating": 5,
+      "timeLeft": 27,
+      "totalSales": 7479
+    }
+  ]
+}

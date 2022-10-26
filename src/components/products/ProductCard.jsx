@@ -160,7 +160,7 @@ const ProductCard = ({
             readOnly
             className={classes.leftAlignItem}
           />
-          <Link to="/home">
+          <Link to={`/product/${id}`}>
             <StyledButton
               size="small"
               color="primary"

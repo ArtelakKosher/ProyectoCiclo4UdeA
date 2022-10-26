@@ -1,0 +1,21 @@
+{
+  "success": true,
+  "product": [
+    {
+      "id": 12,
+      "title": "Crema de leche",
+      "subtitle": "Bolsa de 200gr.",
+      "image": "../images/products/postres_y_helados/Crema_de_leche_pura_200gr.png",
+      "category": "Postres y helados",
+      "descriptionEs": "Completamente pura y sin azúcar.",
+      "descriptionEn": "Completely pure and without azúcar.",
+      "ingredientsEs": "Crema de leche pasteurizada.",
+      "ingredientsEn": "Pasteurized heavy cream.",
+      "price": 5199,
+      "hasTax": "no",
+      "rating": 5,
+      "timeLeft": 27,
+      "totalSales": 7479
+    }
+  ]
+}

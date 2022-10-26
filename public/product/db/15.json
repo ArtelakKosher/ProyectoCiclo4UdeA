@@ -1,0 +1,21 @@
+{
+  "success": true,
+  "product": [
+    {
+      "id": 15,
+      "title": "Helado de chocolate",
+      "subtitle": "Medio litro",
+      "image": "../images/products/postres_y_helados/Helado_artesanal_Chocolate.png",
+      "category": "Postres y helados",
+      "descriptionEs": "Helado artesanal de Chocolate.",
+      "descriptionEn": ".",
+      "ingredientsEs": "Crema de leche, leche condensada, y su sabor (chocolate)",
+      "ingredientsEn": "Heavy cream, condensed milk and flavor (chocolate).",
+      "price": 19370,
+      "hasTax": "no",
+      "rating": 5,
+      "timeLeft": 27,
+      "totalSales": 7479
+    }
+  ]
+}

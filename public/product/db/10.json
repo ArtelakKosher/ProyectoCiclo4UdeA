@@ -1,0 +1,24 @@
+{
+    "success": true,
+    "product": [
+      {
+        "id": 10,
+        "title": "Leche semi-descremada botella",
+        "subtitle": "Botella 2lt.",
+        "image": "../images/products/leche_y_yogures/Leche_Semi-descremada 2lt.png",
+        "category": "Leche y yogures",
+        "descriptionEs": "Pasteurizada, fresca y deliciosa..",
+        "descriptionEn": "Pasteurized milk, fresh and delicious.",
+        "ingredientsEs": "Leche fresca pasteurizada, sal, cuajo.",
+        "ingredientsEn": "Fresh pasteurized milk, salt, rennet.",
+        "price": 13800,
+        "hasTax": "no",
+        "hasDiscount": "no",
+        "discount": "0",
+        "rating": 5,
+        "timeLeft": 27,
+        "totalSales": 7479
+      }
+    ]
+  }
+  

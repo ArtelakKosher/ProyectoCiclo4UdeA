@@ -1,0 +1,20 @@
+{
+  "success": true,
+  "product": [
+    {
+      "id": 8,
+      "title": "ArtKids Unidad combo por 6 Unidades",
+      "subtitle": "80gr.",
+      "image": "../images/products/leche_y_yogures/ArtKids_80gr.png",
+      "descriptionEs": "Skyr tipo yogurt griego para niños..",
+      "descriptionEn": "Skyr greek yogurt for Kids.",
+      "ingredientsEs": "Leche fresca pasteurizada,  azúcar, cultivo, colorante, saborizante.",
+      "ingredientsEn": "Fresh pasteurized milk, sugar,  culture, food coloring and flavor.",
+      "price": 35989,
+      "hasTax": "no",
+      "rating": 5,
+      "timeLeft": 27,
+      "totalSales": 7479
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+    "success": true,
+    "product": [
+      {
+        "id": 2,
+        "title": "Queso tipo mozzarella",
+        "subtitle": "Bloque 1000gr.",
+        "image": "../images/products/quesos_frescos/Queso_tipo_mozzarella-Bloque_1000gr.png",
+        "category": "Quesos frescos",
+        "descriptionEs": "Light reducido en grasa.",
+        "descriptionEn": "Reduced fat.",
+        "ingredientsEs": "Leche fresca pasteurizada, sal, cuajo.",
+        "ingredientsEn": "Fresh pasteurized milk, salt, rennet.",
+        "price": 37999,
+        "hasTax": "no",
+        "rating": 4.3,
+        "timeLeft": 23,
+        "totalSales": 9000
+      }
+    ]
+  }
+  

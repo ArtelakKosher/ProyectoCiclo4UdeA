@@ -1,8 +1,6 @@
-import React from "react";
-import MetaData from "../components/layout/metadata/MetaData";
-
-import { useEffect, useState } from 'react'
+import React, { Fragment, useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import MetaData from "../components/layout/metadata/MetaData";
 import { useParams } from "react-router-dom";
 import { getProductDetails, clearErrors } from "../actions/productActions";
 import { useAlert } from "react-alert";
@@ -10,7 +8,7 @@ import { Carousel } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.css";
 import LinearProgress from "@mui/material/LinearProgress";
 
-const ProductDetails = () => {
+export const Product = () => {
   const { loading, product, error } = useSelector(
     (state) => state.productDetails
   );
@@ -47,8 +45,6 @@ const ProductDetails = () => {
 
   return (
     <>
-      <MetaData title="Detalles de producto" />
-      
       {loading ? (
         <LinearProgress />
       ) : (
@@ -57,8 +53,8 @@ const ProductDetails = () => {
           <div className="row d-flex justify-content-around">
             <div className="col-12 col-lg-5 img-fluid" id="imagen_producto">
               <Carousel pause="hover">
-                {product.img &&
-                  product.img.map((img) => (
+                {product.imagen &&
+                  product.imagen.map((img) => (
                     <Carousel.Item key={img.public_id}>
                       <img
                         className="d-block w-100"
@@ -210,5 +206,3 @@ const ProductDetails = () => {
     </>
   );
 };
-
-export default ProductDetails;

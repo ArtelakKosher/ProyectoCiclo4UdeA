@@ -1,0 +1,21 @@
+{
+  "success": true,
+  "product": [
+    {
+      "id": 18,
+      "title": "Queso Gouda",
+      "subtitle": "Por peso",
+      "image": "../images/products/quesos_semi-maduros/Queso_gouda.png",
+      "category": "Quesos_semi-maduros",
+      "descriptionEs": "Exquisito sabor al paladar",
+      "descriptionEn": "Exquisite taste to the palate.",
+      "ingredientsEs": "Leche fresca pasteurizada, cultivos lácticos, cloruro de calcio al 0.1%, cuajo, sorbato de potasio, sal.",
+      "ingredientsEn": "Fresh pasteurized milk, lactic cultures, 0.1% calcium chloride, rennet, potassium sorbate, salt.",
+      "price": 20867,
+      "hasTax": "no",
+      "rating": 5,
+      "timeLeft": 27,
+      "totalSales": 7479
+    }
+  ]
+}

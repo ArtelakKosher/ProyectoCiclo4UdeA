@@ -1,0 +1,21 @@
+{
+  "success": true,
+  "product": [
+    {
+      "id": 1,
+      "title": "Queso tipo mozzarella",
+      "subtitle": "Tajado 500gr.",
+      "image": "../images/products/quesos_frescos/Queso_tipo_mozzarella-Tajado_500gr.png",
+      "category": "Quesos frescos",
+      "descriptionEs": "Light reducido en grasa.",
+      "descriptionEn": "Reduced fat.",
+      "ingredientsEs": "Leche fresca pasteurizada, sal, cuajo.",
+      "ingredientsEn": "Fresh pasteurized milk, salt, rennet.",
+      "price": 26182,
+      "hasTax": "no",
+      "rating": 5,
+      "timeLeft": 27,
+      "totalSales": 7479
+    }
+  ]
+}

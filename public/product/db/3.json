@@ -1,0 +1,21 @@
+{
+  "success": true,
+  "product": [
+    {
+      "id": 3,
+      "title": "Queso tipo mozzarella",
+      "subtitle": "Personal 30gr.",
+      "image": "../images/products/quesos_frescos/Queso_tipo_mozzarella-Unidad_personal_30gr_personal_30_unidades.png",
+      "category": "Quesos frescos",
+      "descriptionEs": "Light reducido en grasa.",
+      "descriptionEn": "Reduced fat.",
+      "ingredientsEs": "Leche fresca pasteurizada, sal, cuajo.",
+      "ingredientsEn": "Fresh pasteurized milk, salt, rennet.",
+      "price": 1710,
+      "hasTax": "no",
+      "rating": 5,
+      "timeLeft": 27,
+      "totalSales": 7479
+    }
+  ]
+}

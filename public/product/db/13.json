@@ -1,0 +1,21 @@
+{
+  "success": true,
+  "product": [
+    {
+      "id": 13,
+      "title": "Arequipe",
+      "subtitle": "Empaque de 300gr.",
+      "image": "../images/products/postres_y_helados/Arequipe-250g.png",
+      "category": "Postres y helados",
+      "descriptionEs": ".",
+      "descriptionEn": ".",
+      "ingredientsEs": "Leche fresca pasteurizada, azúcar, regulador de acidez (bicarbonato de sodio), enzima lactasa.",
+      "ingredientsEn": "Fresh pasteurized milk, sugar, acidity regulator (sodium bicarbonate), enzyme lactase.",
+      "price": 9900,
+      "hasTax": "no",
+      "rating": 5,
+      "timeLeft": 27,
+      "totalSales": 7479
+    }
+  ]
+}

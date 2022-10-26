@@ -1,0 +1,21 @@
+{
+  "success": true,
+  "product": [
+    {
+      "id": 14,
+      "title": "Helado de vainilla",
+      "subtitle": "Medio litro",
+      "image": "../images/products/postres_y_helados/Helado_artesanal_Vainilla.png",
+      "category": "Postres y helados",
+      "descriptionEs": "Helado artesanal de vainilla.",
+      "descriptionEn": "artisanal ice cream.",
+      "ingredientsEs": "Crema de leche, leche condensada, y su sabor (vainilla)",
+      "ingredientsEn": "Heavy cream, condensed milk and flavor (vanilla).",
+      "price": 17852,
+      "hasTax": "no",
+      "rating": 5,
+      "timeLeft": 27,
+      "totalSales": 7479
+    }
+  ]
+}
