@@ -7,6 +7,12 @@ import Grid from "@mui/material/Grid";
 import { Typography } from "@mui/material";
 import ProductData from "./ProductData";
 
+
+import { useEffect } from 'react'
+import {useDispatch, useSelector} from 'react-redux'
+import { getProducts } from '../../actions/productActions'
+import { useAlert} from 'react-alert'
+
 const Item = styled(Paper)(({ theme }) => ({
   padding: theme.spacing(1),
   textAlign: "center",
@@ -14,6 +20,19 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 
 const ProductsGrid = () => {
+
+  const { loading, products, error} = useSelector(state=> state.products)
+  const alert= useAlert();
+
+  const dispatch = useDispatch();
+  useEffect(() => {
+      if (error){
+          return alert.error(error)
+      }
+
+      dispatch(getProducts());
+  }, [dispatch])
+
   return (
     <div className="products-grid">
       <Box m={5}>
