@@ -5,7 +5,7 @@
     {
       "id": 1,
       "title": "Queso tipo mozzarella",
-      "subtitle": "Tajado 500gr",
+      "subtitle": "Tajado 500gr.",
       "image": "/images/products/quesos_frescos/Queso_tipo_mozzarella-Tajado_500gr.png",
       "category": "Quesos frescos",
       "descriptionEs": "Light reducido en grasa.",
@@ -21,7 +21,7 @@
     {
       "id": 2,
       "title": "Queso tipo mozzarella",
-      "subtitle": "Bloque 1000gr",
+      "subtitle": "Bloque 1000gr.",
       "image": "/images/products/quesos_frescos/Queso_tipo_mozzarella-Bloque_1000gr.png",
       "category": "Quesos frescos",
       "descriptionEs": "Light reducido en grasa.",
@@ -37,7 +37,7 @@
     {
       "id": 3,
       "title": "Queso tipo mozzarella",
-      "subtitle": "Personal 30gr",
+      "subtitle": "Personal 30gr.",
       "image": "/images/products/quesos_frescos/Queso_tipo_mozzarella-Unidad_personal_30gr_personal_30_unidades.png",
       "category": "Quesos frescos",
       "descriptionEs": "Light reducido en grasa.",
@@ -53,7 +53,7 @@
     {
       "id": 4,
       "title": "Queso campesino",
-      "subtitle": "Entero 500gr",
+      "subtitle": "Entero 500gr.",
       "image": "/images/products/quesos_frescos/Queso_tipo_campesino-Entero_500gr.png",
       "category": "Quesos frescos",
       "descriptionEs": "Queso fresco semi-duro.",
@@ -69,7 +69,7 @@
     {
       "id": 5,
       "title": "Cream Cheese ",
-      "subtitle": "Queso crema 220g",
+      "subtitle": "Queso crema 220gr.",
       "image": "/images/products/quesos_frescos/Queso_tipo_Cream cheese_220gr.png",
       "category": "Quesos frescos",
       "descriptionEs": "Queso esparcible alto en proteína.",
@@ -85,7 +85,7 @@
     {
       "id": 6,
       "title": "Yogurt natural",
-      "subtitle": "Botella 2 lt",
+      "subtitle": "Botella 2lt.",
       "image": "/images/products/leche_y_yogures/Yogurt_natural-2lt.png",
       "category": "Yogures",
       "descriptionEs": "Nuestro auténtico y cremoso yogurt natural.",
@@ -101,7 +101,7 @@
     {
       "id": 7,
       "title": "Yogurt natural",
-      "subtitle": "150gr",
+      "subtitle": "150gr.",
       "image": "/images/products/leche_y_yogures/Yogurt_natural-150gr.png",
       "category": "Yogures",
       "descriptionEs": "Nuestro auténtico y cremoso yogurt natural.",
@@ -147,7 +147,7 @@
     {
       "id": 10,
       "title": "Leche semi-descremada botella",
-      "subtitle": "Botella 2lt",
+      "subtitle": "Botella 2lt.",
       "image": "/images/products/leche_y_yogures/Leche_Semi-descremada 2lt.png",
       "category": "Leche y yogures",
       "descriptionEs": "Pasteurizada, fresca y deliciosa..",
@@ -165,7 +165,7 @@
     {
       "id": 11,
       "title": "Leche semi-descremada botella",
-      "subtitle": "Botella 1lt",
+      "subtitle": "Botella 1lt.",
       "image": "/images/products/leche_y_yogures/Leche_Semi-descremada 1lt.png",
       "category": "Leche y yogures",
       "descriptionEs": "Pasteurizada, fresca y deliciosa..",
@@ -183,8 +183,8 @@
     {
       "id": 12,
       "title": "Crema de leche",
-      "subtitle": "200gr",
-      "image": "/images/products/postres_y_helados/Crema_de_leche_pura_200g.png",
+      "subtitle": "Bolsa de 200gr.",
+      "image": "/images/products/postres_y_helados/Crema_de_leche_pura_200gr.png",
       "category": "Postres y helados",
       "descriptionEs": "Completamente pura y sin azúcar.",
       "descriptionEn": "Completely pure and without azúcar.",
@@ -199,7 +199,7 @@
     {
       "id": 13,
       "title": "Arequipe",
-      "subtitle": "300gr",
+      "subtitle": "Empaque de 300gr.",
       "image": "/images/products/postres_y_helados/Arequipe-250g.png",
       "category": "Postres y helados",
       "descriptionEs": ".",
@@ -263,7 +263,7 @@
     {
       "id": 17,
       "title": "Leche condensada",
-      "subtitle": "200g",
+      "subtitle": "Bolsa de 200gr.",
       "image": "/images/products/postres_y_helados/Leche_condensada.png",
       "category": "Postres y helados",
       "descriptionEs": "Solo dos ingredientes.",
