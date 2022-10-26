@@ -1,5 +1,10 @@
 import { useEffect, useState } from "react";
-import { ProductContainer , ProductContainerColumn , ProductContainerRow} from "./Product.elements";
+import {
+  ProductContainer,
+  ProductContainerColumnLeft,
+  ProductContainerColumnRight,
+  ProductContainerRow,
+} from "./Product.elements";
 import LinearProgress from "@mui/material/LinearProgress";
 import { Container, Row, Col } from "reactstrap";
 
@@ -12,6 +17,7 @@ import Rating from "@mui/material/Rating";
 import { Typography } from "@mui/material";
 
 import CurrencyFormat from "react-currency-format";
+import "../../assets/styles/product.css"
 
 const Product = () => {
   const { loading, product, error } = useSelector(
@@ -77,7 +83,7 @@ const Product = () => {
                     <br />
                     <Container key={ProductData.id}>
                       <ProductContainerRow>
-                        <ProductContainerColumn lg="6" md="6">
+                        <ProductContainerColumnLeft lg="6" md="6">
                           <div className="product__main-img">
                             <img
                               src={ProductData.image}
@@ -85,9 +91,9 @@ const Product = () => {
                               className="w-100"
                             />
                           </div>
-                        </ProductContainerColumn>
-                        <Col lg="6" md="6">
-                          <h3>{ProductData.title}</h3>
+                        </ProductContainerColumnLeft>
+                        <ProductContainerColumnRight lg="6" md="6">
+                          <h2>{ProductData.title}</h2>
                           <p id="product_id">
                             ID del Producto {ProductData.id}
                           </p>
@@ -105,30 +111,30 @@ const Product = () => {
                           </span>
                           <hr />
                           <Typography
-                  level="body"
-                  component="strong"
-                  style={{
-                    color: "#12284C",
-                    fontFamily: "Nunito Sans",
-                  }}
-                >
-                  Precio:{" "}
-                </Typography>
-                <Typography
-                  mb={2}
-                  maxWidth={400}
-                  style={{
-                    color: "#12284C",
-                    fontFamily: "Nunito Sans",
-                  }}
-                >
-                  <CurrencyFormat
-                    value={ProductData.price}
-                    displayType={"text"}
-                    thousandSeparator={true}
-                    prefix={"$"}
-                  />
-                </Typography>
+                            level="body"
+                            component="strong"
+                            style={{
+                              color: "#12284C",
+                              fontFamily: "Nunito Sans",
+                            }}
+                          >
+                            Precio:{" "}
+                          </Typography>
+                          <Typography
+                            mb={2}
+                            maxWidth={400}
+                            style={{
+                              color: "#12284C",
+                              fontFamily: "Nunito Sans",
+                            }}
+                          >
+                            <CurrencyFormat
+                              value={ProductData.price}
+                              displayType={"text"}
+                              thousandSeparator={true}
+                              prefix={"$"}
+                            />
+                          </Typography>
                           <div className="stockCounter d-inline">
                             <span
                               className="btn btn-danger minus"
@@ -154,6 +160,7 @@ const Product = () => {
                             id="carrito_btn"
                             className="btn btn-primary d-inline ml-4"
                             disabled={product.inventario === 0}
+                            style={{margin:20}}
                           >
                             Agregar al Carrito
                           </button>
@@ -187,7 +194,7 @@ const Product = () => {
                             data-toggle="modal"
                             data-target="#ratingModal"
                           >
-                            Deja tu Opinion
+                            Deja tu opinión
                           </button>
                           <div className="alert alert-danger mt-5" type="alert">
                             Inicia Sesión para dejar tu review
@@ -260,7 +267,7 @@ const Product = () => {
                               </div>
                             </div>
                           </div>
-                        </Col>
+                        </ProductContainerColumnRight>
                       </ProductContainerRow>
                     </Container>
                   </ProductContainer>

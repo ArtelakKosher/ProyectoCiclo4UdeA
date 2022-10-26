@@ -13,8 +13,12 @@ export const ProductContainerRow= styled(Row)`
     display: flex;
 `;
 
-export const ProductContainerColumn = styled(Col)`
+export const ProductContainerColumnLeft = styled(Col)`
   display: flex;
   justify-content: center;
   align-items: center;
+`;
+
+export const ProductContainerColumnRight = styled(Col)`
+    color: #12284C;
 `;
