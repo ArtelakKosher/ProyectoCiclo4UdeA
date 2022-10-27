@@ -112,7 +112,7 @@ const Product = () => {
 
                           <span id="No_de_reviews">
                             {" "}
-                            ({ProductData.numReviews} Reviews)
+                            ({ProductData.numReviews} opiniones)
                           </span>
                           <hr />
                           <Typography
@@ -226,7 +226,7 @@ const Product = () => {
                             </Link>
                           </button>
                           <div className="alert alert-danger mt-5" type="alert">
-                            Inicia Sesión para dejar tu review
+                            Inicia sesión para dejar tu opinión
                           </div>
 
                           {/*Mensaje emergente para dejar opinion y calificacion*/}
