@@ -77,3 +77,19 @@
 .order__btn:hover {
   background: var(--artelak-ocre);
 }
+
+.category {
+  font-weight: 600;
+  color: #212245;
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+  margin-top: 10px;
+}
+
+.category span {
+  padding: 5px 10px;
+  background: #f2d9c7;
+  color: #12284C;
+  border-radius: 5px;
+}

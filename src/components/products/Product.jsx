@@ -102,6 +102,9 @@ const Product = () => {
                           <p id="product_id">
                             ID del Producto {ProductData.id}
                           </p>
+                          <p className="category mb-5">
+                            Categoria: <span>{ProductData.categoryEs}</span>
+                          </p>
                           <hr />
                           <Rating
                             name="read-only"
