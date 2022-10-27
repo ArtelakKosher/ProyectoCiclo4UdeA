@@ -111,7 +111,6 @@ const Product = () => {
                           />
 
                           <span id="No_de_reviews">
-                            {" "}
                             ({ProductData.numReviews} opiniones)
                           </span>
                           <hr />
