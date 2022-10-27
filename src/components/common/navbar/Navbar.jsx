@@ -30,6 +30,8 @@ import {
 } from "react-icons/fa";
 import { useState } from "react";
 
+import { Badge } from "@mui/material";
+
 const Navbar = () => {
   const [click, setClick] = useState(false);
 
@@ -71,11 +73,30 @@ const Navbar = () => {
             </IconNavLink>
 
             <IconNavLink to="/cart">
-              <FaShoppingCart size={25} />
+              <Badge
+                badgeContent={1}
+                sx={{
+                  marginBottom: 0,
+                  "& .MuiBadge-badge": {
+                    right: -5,
+                    color: "white",
+                    backgroundColor: "#cc9e6a",
+                  },
+                }}
+              >
+                <FaShoppingCart size={25} />
+              </Badge>
             </IconNavLink>
 
             <IconLogoMobile onClick={() => ChangeClick()}>
-              {click ? <FaTimesCircle size={25} style={{color:"var(--artelak-ocre)"}}/> : <FaBars size={25} />}
+              {click ? (
+                <FaTimesCircle
+                  size={25}
+                  style={{ color: "var(--artelak-ocre)" }}
+                />
+              ) : (
+                <FaBars size={25} />
+              )}
             </IconLogoMobile>
           </IconContainer>
 
