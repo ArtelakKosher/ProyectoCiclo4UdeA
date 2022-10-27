@@ -149,7 +149,16 @@ const Cart = () => {
           </TableContainer>
           <div className="button__group mt-4">
             <h4>
-              Subtotal: $<span className="cart__subtotal">10000</span>
+              Subtotal: {" "}
+              <span className="cart__subtotal" >
+                <CurrencyFormat
+                  value="10000"
+                  displayType={"text"}
+                  thousandSeparator={true}
+                  prefix={"$"}
+                  style={{color: '#cc9e6a'}}
+                />
+              </span>
             </h4>
             <p>
               Los impuestos y el envío se calcularán en el momento de la compra

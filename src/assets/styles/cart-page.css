@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Nunito Sans',sans-serif;
+    color: var(--artelak-blue);
 }
 
 :root {
@@ -44,4 +45,8 @@
   display: flex;
   justify-content: left;
   align-items: center;
+}
+
+.cart__subtotal{
+  font-weight: bolder;
 }
