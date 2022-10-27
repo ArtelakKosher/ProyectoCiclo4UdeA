@@ -147,10 +147,10 @@ const Cart = () => {
               </TableBody>
             </Table>
           </TableContainer>
-          <div className="mt-4">
-            <h6>
+          <div className="button__group mt-4">
+            <h4>
               Subtotal: $<span className="cart__subtotal">10000</span>
-            </h6>
+            </h4>
             <p>
               Los impuestos y el envío se calcularán en el momento de la compra
             </p>
