@@ -193,7 +193,7 @@ const Product = () => {
                                   : "redColor"
                               }
                             >
-                              {product.inventario > 0
+                              {ProductData.inventory > 0
                                 ? "En existencia"
                                 : "Agotado"}
                             </span>
