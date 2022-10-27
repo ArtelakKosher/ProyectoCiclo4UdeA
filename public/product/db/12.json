@@ -3,19 +3,28 @@
   "product": [
     {
       "id": 12,
-      "title": "Crema de leche",
-      "subtitle": "Bolsa de 200gr.",
+      "titleEs": "Crema de leche",
+      "titleEn": "Heavy cream",
+      "subtitleEs": "Empaque 200gr.",
+      "subtitleEn": "Package 200gr.",
       "image": "../images/products/postres_y_helados/Crema_de_leche_pura_200gr.png",
-      "category": "Postres y helados",
+      "categoryEs": "Postres y helados",
+      "categoryEn": "Desserts ans ice cream",
       "descriptionEs": "Completamente pura y sin azúcar.",
       "descriptionEn": "Completely pure and without azúcar.",
       "ingredientsEs": "Crema de leche pasteurizada.",
-      "ingredientsEn": "Pasteurized heavy cream.",
+      "ingredientsEn": "asteurized heavy cream.",
       "price": 5199,
+      "inventory": "8000",
+      "soldBy": "Daniela",
+      "numReviews": 400,
+      "hasDiscount": "no",
       "hasTax": "no",
       "rating": 5,
       "timeLeft": 27,
-      "totalSales": 7479
+      "totalSales": 7479,
+      "createdAt": "01/09/2022",
+      "updatedAt": "08/09/2022 09:57:57 p. m."
     }
   ]
 }

@@ -91,14 +91,14 @@ const Product = () => {
                           <div className="product__main-img">
                             <img
                               src={ProductData.image}
-                              alt={ProductData.title}
+                              alt={ProductData.titleEs}
                               className="w-100"
                             />
                           </div>
                         </ProductContainerColumnLeft>
                         <ProductContainerColumnRight lg="6" md="6">
                           <br />
-                          <h2>{ProductData.title}</h2>
+                          <h2>{ProductData.titleEs}</h2>
                           <p id="product_id">
                             ID del Producto {ProductData.id}
                           </p>
@@ -112,7 +112,7 @@ const Product = () => {
 
                           <span id="No_de_reviews">
                             {" "}
-                            ({product.numCalificaciones} Reviews)
+                            ({ProductData.numReviews} Reviews)
                           </span>
                           <hr />
                           <Typography
@@ -165,7 +165,7 @@ const Product = () => {
                             type="button"
                             id="carrito_btn"
                             className="btn btn-primary d-inline ml-4 order__btn"
-                            disabled={product.inventario === 0}
+                            disabled={ProductData.inventory === 0}
                             style={{
                               margin: 20,
                               color: "white",
@@ -188,7 +188,7 @@ const Product = () => {
                             <span
                               id="stock_stado"
                               className={
-                                product.inventario > 0
+                                ProductData.inventory > 0
                                   ? "greenColor"
                                   : "redColor"
                               }
@@ -203,7 +203,7 @@ const Product = () => {
                           <p>{ProductData.descriptionEs}</p>
                           <hr />
                           <p id="vendedor">
-                            Vendido por: <strong>{product.vendedor}</strong>
+                            Vendido por: <strong>{ProductData.soldBy}</strong>
                           </p>
                           <button
                             id="btn_review"

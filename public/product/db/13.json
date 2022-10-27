@@ -3,19 +3,28 @@
   "product": [
     {
       "id": 13,
-      "title": "Arequipe",
-      "subtitle": "Empaque de 300gr.",
+      "titleEs": "Arequipe",
+      "titleEn": "Arequipe",
+      "subtitleEs": "Empaque 250gr.",
+      "subtitleEn": "Package 250gr.",
       "image": "../images/products/postres_y_helados/Arequipe-250g.png",
-      "category": "Postres y helados",
-      "descriptionEs": ".",
-      "descriptionEn": ".",
+      "categoryEs": "Postres y helados",
+      "categoryEn": "Desserts and ice cream",
+      "descriptionEs": "Textura suave y deliciosa.",
+      "descriptionEn": "Smooth and delicious texture, fresh explosion of flavon to the palate.",
       "ingredientsEs": "Leche fresca pasteurizada, azúcar, regulador de acidez (bicarbonato de sodio), enzima lactasa.",
       "ingredientsEn": "Fresh pasteurized milk, sugar, acidity regulator (sodium bicarbonate), enzyme lactase.",
       "price": 9900,
+      "inventory": "8000",
+      "soldBy": "Daniela",
+      "numReviews": 400,
+      "hasDiscount": "no",
       "hasTax": "no",
       "rating": 5,
       "timeLeft": 27,
-      "totalSales": 7479
+      "totalSales": 7479,
+      "createdAt": "01/09/2022",
+      "updatedAt": "08/09/2022 09:57:57 p. m."
     }
   ]
 }

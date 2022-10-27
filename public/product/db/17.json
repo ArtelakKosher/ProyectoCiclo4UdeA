@@ -2,20 +2,29 @@
   "success": true,
   "product": [
     {
-      "id": 18,
-      "title": "Queso Gouda",
-      "subtitle": "Por peso",
-      "image": "../images/products/quesos_semi-maduros/Queso_gouda.png",
-      "category": "Quesos_semi-maduros",
-      "descriptionEs": "Exquisito sabor al paladar",
-      "descriptionEn": "Exquisite taste to the palate.",
-      "ingredientsEs": "Leche fresca pasteurizada, cultivos lácticos, cloruro de calcio al 0.1%, cuajo, sorbato de potasio, sal.",
-      "ingredientsEn": "Fresh pasteurized milk, lactic cultures, 0.1% calcium chloride, rennet, potassium sorbate, salt.",
-      "price": 20867,
+      "id": 17,
+      "titleEs": "Leche condensada",
+      "titleEn": "Condensed milk",
+      "subtitleEs": "Empaque 200gr.",
+      "subtitleEn": "Package 200gr.",
+      "image": "../images/products/postres_y_helados/Leche_condensada.png",
+      "categoryEs": "Postres y helados",
+      "categoryEn": "Half a liter",
+      "descriptionEs": "Solo dos ingredientes.",
+      "descriptionEn": "Just two ingredients.",
+      "ingredientsEs": "Leche fresca pasteurizada, azúcar..",
+      "ingredientsEn": "Fresh pasteurized milk, sugar..",
+      "price": 4325,
+      "inventory": "8000",
+      "soldBy": "Daniela",
+      "numReviews": 400,
+      "hasDiscount": "no",
       "hasTax": "no",
       "rating": 5,
       "timeLeft": 27,
-      "totalSales": 7479
+      "totalSales": 7479,
+      "createdAt": "01/09/2022",
+      "updatedAt": "08/09/2022 09:57:57 p. m."
     }
   ]
 }

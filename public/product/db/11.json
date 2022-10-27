@@ -3,21 +3,28 @@
   "product": [
     {
       "id": 11,
-      "title": "Leche semi-descremada botella",
-      "subtitle": "Botella 1lt.",
+      "titleEs": "Leche semi-descremada",
+      "titleEn": "Semi skimmed milk",
+      "subtitleEs": "Botella de 1lt.",
+      "subtitleEn": " Bottle of 1lt.",
       "image": "../images/products/leche_y_yogures/Leche_Semi-descremada 1lt.png",
-      "category": "Leche y yogures",
-      "descriptionEs": "Pasteurizada, fresca y deliciosa..",
+      "categoryEs": "Leche y yoguress",
+      "categoryEn": "Milk amd yogurt",
+      "descriptionEs": "Pasteurizada, fresca y deliciosa.",
       "descriptionEn": "Pasteurized milk, fresh and delicious.",
       "ingredientsEs": "Leche fresca pasteurizada, sal, cuajo.",
-      "ingredientsEn": "Fresh pasteurized milk, salt, rennet.",
+      "ingredientsEn": "Fresh pasteurized milk, salt, rennet..",
       "price": 6900,
-      "hasTax": "no",
+      "inventory": "8000",
+      "soldBy": "Daniela",
+      "numReviews": 400,
       "hasDiscount": "no",
-      "discount": "0",
+      "hasTax": "no",
       "rating": 5,
       "timeLeft": 27,
-      "totalSales": 7479
+      "totalSales": 7479,
+      "createdAt": "01/09/2022",
+      "updatedAt": "08/09/2022 09:57:57 p. m."
     }
   ]
 }
