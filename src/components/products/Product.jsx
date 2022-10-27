@@ -19,6 +19,8 @@ import { Typography } from "@mui/material";
 import CurrencyFormat from "react-currency-format";
 import "../../assets/styles/product.css"
 
+import { Button } from 'semantic-ui-react'
+
 const Product = () => {
   const { loading, product, error } = useSelector(
     (state) => state.productDetails
@@ -136,31 +138,21 @@ const Product = () => {
                             />
                           </Typography>
                           <div className="stockCounter d-inline">
-                            <span
-                              className="btn btn-danger minus"
-                              onClick={decreaseQty}
-                            >
-                              -
-                            </span>
+                            <Button circular icon='minus' negative onClick={decreaseQty}/>
                             <input
                               type="number"
                               className="form-control count d-inline"
                               value={quantity}
                               readOnly
                             />
-                            <span
-                              className="btn btn-primary plus"
-                              onClick={increaseQty}
-                            >
-                              +
-                            </span>
+                            <Button circular icon='plus' positive onClick={increaseQty}/>
                           </div>
                           <button
                             type="button"
                             id="carrito_btn"
                             className="btn btn-primary d-inline ml-4"
                             disabled={product.inventario === 0}
-                            style={{margin:20}}
+                            style={{margin:20, color:"white", backgroundColor: "12284C", fontWeight:"bold"}}
                           >
                             Agregar al Carrito
                           </button>
