@@ -63,8 +63,8 @@ const StyledButton = styled(Button, {
 
 const ProductCard = ({
   id,
-  title,
-  subtitle,
+  titleEs,
+  subtitleEs,
   image,
   category,
   descriptionEs,
@@ -99,11 +99,11 @@ const ProductCard = ({
               <StyledShareIcon />
             </IconButton>
           }
-          title={title}
-          subheader={subtitle}
+          title={titleEs}
+          subheader={subtitleEs}
           className={classes.blue}
         />
-        <CardMedia component="img" height="200" image={image} alt={title} />
+        <CardMedia component="img" height="200" image={image} alt={titleEs} />
         <CardContent>
           <Typography
             variant="body2"

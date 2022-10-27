@@ -17,9 +17,12 @@ import Rating from "@mui/material/Rating";
 import { Typography } from "@mui/material";
 
 import CurrencyFormat from "react-currency-format";
-import "../../assets/styles/product.css"
+import "../../assets/styles/product.css";
 
-import { Button } from 'semantic-ui-react'
+import { Button } from "semantic-ui-react";
+import { Link } from "react-router-dom";
+
+import { FaShoppingCart } from "react-icons/fa";
 
 const Product = () => {
   const { loading, product, error } = useSelector(
@@ -82,7 +85,6 @@ const Product = () => {
                       Detalles del producto
                     </Typography>
                     <br />
-                    <br />
                     <Container key={ProductData.id}>
                       <ProductContainerRow>
                         <ProductContainerColumnLeft lg="6" md="6">
@@ -95,6 +97,7 @@ const Product = () => {
                           </div>
                         </ProductContainerColumnLeft>
                         <ProductContainerColumnRight lg="6" md="6">
+                          <br />
                           <h2>{ProductData.title}</h2>
                           <p id="product_id">
                             ID del Producto {ProductData.id}
@@ -138,23 +141,46 @@ const Product = () => {
                             />
                           </Typography>
                           <div className="stockCounter d-inline">
-                            <Button circular icon='minus' negative onClick={decreaseQty}/>
+                            <Button
+                              circular
+                              icon="minus"
+                              negative
+                              onClick={decreaseQty}
+                            />
                             <input
                               type="number"
                               className="form-control count d-inline"
                               value={quantity}
                               readOnly
                             />
-                            <Button circular icon='plus' positive onClick={increaseQty}/>
+                            <Button
+                              circular
+                              icon="plus"
+                              positive
+                              onClick={increaseQty}
+                            />
                           </div>
+
                           <button
                             type="button"
                             id="carrito_btn"
-                            className="btn btn-primary d-inline ml-4"
+                            className="btn btn-primary d-inline ml-4 order__btn"
                             disabled={product.inventario === 0}
-                            style={{margin:20, color:"white", backgroundColor: "12284C", fontWeight:"bold"}}
+                            style={{
+                              margin: 20,
+                              color: "white",
+                              fontWeight: "bold",
+                            }}
                           >
-                            Agregar al Carrito
+                            <Link
+                              to="/products"
+                              style={{
+                                textDecoration: "none",
+                                color: "white",
+                              }}
+                            >
+                              Agregar al Carrito
+                            </Link>
                           </button>
                           <hr />
                           <p>
@@ -182,11 +208,22 @@ const Product = () => {
                           <button
                             id="btn_review"
                             type="button"
-                            className="btn btn-primary mt-4"
+                            className="btn btn-primary mt-4 order__btn"
                             data-toggle="modal"
                             data-target="#ratingModal"
+                            style={{
+                              fontWeight: "bold",
+                            }}
                           >
-                            Deja tu opinión
+                            <Link
+                              to="/products"
+                              style={{
+                                textDecoration: "none",
+                                color: "white",
+                              }}
+                            >
+                              Deja tu opinión
+                            </Link>
                           </button>
                           <div className="alert alert-danger mt-5" type="alert">
                             Inicia Sesión para dejar tu review

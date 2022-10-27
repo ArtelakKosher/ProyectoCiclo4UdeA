@@ -9,8 +9,8 @@ export const ProductContainer = styled.div`
   flex-direction: column;
 `;
 
-export const ProductContainerRow= styled(Row)`
-    display: flex;
+export const ProductContainerRow = styled(Row)`
+  display: flex;
 `;
 
 export const ProductContainerColumnLeft = styled(Col)`
@@ -20,5 +20,5 @@ export const ProductContainerColumnLeft = styled(Col)`
 `;
 
 export const ProductContainerColumnRight = styled(Col)`
-    color: #12284C;
+  color: #12284c;
 `;
