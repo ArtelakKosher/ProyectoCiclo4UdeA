@@ -117,9 +117,9 @@ const Home = () => {
                   agregado sí que hace competencia. 
                   <br />
                   <br />
-                  No nos interesa lucrar nos
+                  No nos interesa lucrarnos
                   por engañar a nuestros clientes, nos interesa un negocio
-                  justo, donde el comprador recibe lo que se le promete. Un
+                  justo, donde el comprador recibe lo que se le ofrece. Un
                   comprador exigente que tiene conciencia y entendimiento de
                   llevar a su hogar productos que cuiden su salud. All fin y al
                   cabo saldrá más costoso curar una enfermedad que prevenirla
