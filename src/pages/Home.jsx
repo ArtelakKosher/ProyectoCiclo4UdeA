@@ -107,10 +107,23 @@ const Home = () => {
                   ¿Por qué <span>Artelak?</span>
                 </h2>
                 <p className="artelak__desc">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Dolorum, minus. Tempora reprehenderit a corporis velit,
-                  laboriosam vitae ullam, repellat illo sequi odio esse iste
-                  fugiat dolor, optio incidunt eligendi deleniti!
+                  Porque necesitamos productos reales, procesos honestos y
+                  rigurosos que permitan contribuir con una alimentación rica en
+                  valores nutricionales. 
+                  <br />
+                  <br />
+                  Nuestros productos hablan de nuestros
+                  valores, esos que nuestra familia nos ha inculcado y ese valor
+                  agregado sí que hace competencia. 
+                  <br />
+                  <br />
+                  No nos interesa lucrar nos
+                  por engañar a nuestros clientes, nos interesa un negocio
+                  justo, donde el comprador recibe lo que se le promete. Un
+                  comprador exigente que tiene conciencia y entendimiento de
+                  llevar a su hogar productos que cuiden su salud. All fin y al
+                  cabo saldrá más costoso curar una enfermedad que prevenirla
+                  con comida de verdad.
                 </p>
 
                 <ListGroup className="mt-4">
@@ -119,8 +132,7 @@ const Home = () => {
                       <RiCheckboxCircleFill size={25} /> Productos naturales
                     </p>
                     <p className="choose__us-desc">
-                      Nuestros productos no contienen colorantes ni conservantes
-                      artificiales.
+                      Nuestros productos no contienen almidones ni espesantes.
                     </p>
                   </ListGroupItem>
 
@@ -129,7 +141,7 @@ const Home = () => {
                       <RiCheckboxCircleFill size={25} /> Productos de calidad
                     </p>
                     <p className="choose__us-desc">
-                      Contamos con certificación Kosher Jalav Israel.
+                      Contamos con certificación Kosher Jalav Israel. Nuestra producción es responsable, apoyamos el silvo-pastoreo, práctica verde.
                     </p>
                   </ListGroupItem>
 
@@ -138,8 +150,7 @@ const Home = () => {
                       <RiCheckboxCircleFill size={25} /> Atención personalizada
                     </p>
                     <p className="choose__us-desc">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Qui, earum.
+                      Nos encargamos de realizar seguimiento desde la tu solicitud de pedido, hasta que llegue a la puerta de tu casa.
                     </p>
                   </ListGroupItem>
                 </ListGroup>
