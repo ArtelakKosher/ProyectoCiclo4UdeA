@@ -68,8 +68,8 @@ const ProductsGrid = () => {
                 <Grid item key={ProductData.id} xl={3} lg={4} md={6} sm={6}>
                   <Item>
                     <ProductCard
+                      id={ProductData._id}
                       sku={ProductData.sku}
-                      id={ProductData.id}
                       title={ProductData.title}
                       subtitle={ProductData.subtitle}
                       image={ProductData.image}
