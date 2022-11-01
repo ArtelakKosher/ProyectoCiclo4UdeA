@@ -164,7 +164,7 @@ const ProductCard = ({
             readOnly
             className={classes.leftAlignItem}
           />
-          <Link to={`/product/${id}`}>
+          <Link to={`https://artelak-backend.herokuapp.com/api/product/${id}`}>
             <StyledButton
               size="small"
               color="primary"
