@@ -85,25 +85,25 @@ const Product = () => {
                       Detalles del producto
                     </Typography>
                     <br />
-                    <Container key={ProductData.id}>
+                    <Container key={ProductData._id}>
                       <ProductContainerRow>
                         <ProductContainerColumnLeft lg="6" md="6">
                           <div className="product__main-img">
                             <img
                               src={ProductData.image}
-                              alt={ProductData.titleEs}
+                              alt={ProductData.title}
                               className="w-100"
                             />
                           </div>
                         </ProductContainerColumnLeft>
                         <ProductContainerColumnRight lg="6" md="6">
                           <br />
-                          <h2>{ProductData.titleEs}</h2>
+                          <h2>{ProductData.title}</h2>
                           <p id="product_id">
-                            ID del Producto {ProductData.id}
+                            ID del Producto {ProductData._id}
                           </p>
                           <p className="category mb-5">
-                            Categoria: <span>{ProductData.categoryEs}</span>
+                            Categoria: <span>{ProductData.category}</span>
                           </p>
                           <hr />
                           <Rating
@@ -114,7 +114,7 @@ const Product = () => {
                           />
 
                           <span id="No_de_reviews">
-                            ({ProductData.numReviews} opiniones)
+                            ({ProductData.qualifications} opiniones)
                           </span>
                           <hr />
                           <Typography
@@ -202,10 +202,10 @@ const Product = () => {
                           </p>
                           <hr />
                           <h4 className="mt-2">Descripción:</h4>
-                          <p>{ProductData.descriptionEs}</p>
+                          <p>{ProductData.description}</p>
                           <hr />
                           <p id="vendedor">
-                            Vendido por: <strong>{ProductData.soldBy}</strong>
+                            Vendido por: <strong>{ProductData.seller}</strong>
                           </p>
                           <button
                             id="btn_review"
