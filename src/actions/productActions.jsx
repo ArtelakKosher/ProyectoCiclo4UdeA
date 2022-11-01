@@ -14,7 +14,7 @@ export const getProducts = () => async(dispatch)=>{
     try {
         dispatch({type: ALL_PRODUCTS_REQUEST})
 
-        const {data} = await axios.get(`db/productsData.json`)
+        const {data} = await axios.get(`https://artelak-backend.herokuapp.com/api/products`)
  
         {/* console.log(data) */}
         

@@ -4,7 +4,6 @@ import { styled } from "@mui/material/styles";
 import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
 import { Typography } from "@mui/material";
-import ProductData from "./ProductData";
 
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
@@ -69,16 +68,14 @@ const ProductsGrid = () => {
                 <Grid item key={ProductData.id} xl={3} lg={4} md={6} sm={6}>
                   <Item>
                     <ProductCard
+                      sku={ProductData.sku}
                       id={ProductData.id}
-                      titleEs={ProductData.titleEs}
-                      subtitleEs={ProductData.subtitleEs}
+                      title={ProductData.title}
+                      subtitle={ProductData.subtitle}
                       image={ProductData.image}
                       category={ProductData.category}
-                      descriptionEs={ProductData.descriptionEs}
-                      descriptionEn={ProductData.descriptionEn}
-                      c
-                      ingredientsEn={ProductData.ingredientsEn}
-                      ingredientsEs={ProductData.ingredientsEs}
+                      description={ProductData.description}
+                      ingredients={ProductData.ingredients}
                       price={ProductData.price}
                       rating={ProductData.rating}
                       timeLeft={ProductData.timeLeft}

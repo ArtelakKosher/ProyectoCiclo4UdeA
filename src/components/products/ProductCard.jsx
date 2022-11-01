@@ -63,18 +63,25 @@ const StyledButton = styled(Button, {
 
 const ProductCard = ({
   id,
-  titleEs,
-  subtitleEs,
+  sku,
+  title,
+  subtitle,
   image,
   category,
-  descriptionEs,
-  descriptionEn,
-  ingredientsEs,
-  ingredientsEn,
+  description,
+  ingredients,
   price,
-  rating,
-  timeLeft,
+  inventory,
+  seller,
   totalSales,
+  hasTaxes,
+  hasDiscount,
+  timeLeft,
+  rating,
+  qualifications,
+  reviews,
+  createdAt,
+  updatedAt
 }) => {
   const classes = useStyles();
 
@@ -82,7 +89,7 @@ const ProductCard = ({
 
   return (
     <Box
-      key={id}
+      key={sku}
       m={0}
       pt={0}
       display="flex"
@@ -99,11 +106,11 @@ const ProductCard = ({
               <StyledShareIcon />
             </IconButton>
           }
-          title={titleEs}
-          subheader={subtitleEs}
+          title={title}
+          subheader={subtitle}
           className={classes.blue}
         />
-        <CardMedia component="img" height="200" image={image} alt={titleEs} />
+        <CardMedia component="img" height="200" image={image} alt={title} />
         <CardContent>
           <Typography
             variant="body2"
@@ -115,10 +122,7 @@ const ProductCard = ({
               fontFamily: "Nunito Sans",
             }}
           >
-            <Flag name="es" />: {descriptionEs}
-            <br />
-            <br />
-            <Flag name="us" />: {descriptionEn}
+            Descripción: {description}
             <br />
             <br />
             <Box display="flex" justifyContent="flex-end">
