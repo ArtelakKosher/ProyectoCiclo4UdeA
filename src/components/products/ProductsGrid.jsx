@@ -1,8 +1,7 @@
+import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
 import ProductCard from "./ProductCard";
-import Box from "@mui/material/Box";
-import { styled } from "@mui/material/styles";
-import Paper from "@mui/material/Paper";
-import Grid from "@mui/material/Grid";
+import { CCol, CContainer, CRow } from "@coreui/bootstrap-react";
 import { Typography } from "@mui/material";
 
 import { useEffect } from "react";
@@ -11,12 +10,6 @@ import { getProducts } from "../../actions/productActions";
 import { useAlert } from "react-alert";
 
 import LinearProgress from "@mui/material/LinearProgress";
-
-const Item = styled(Paper)(({ theme }) => ({
-  padding: theme.spacing(1),
-  textAlign: "center",
-  boxShadow: "none",
-}));
 
 const ProductsGrid = () => {
   const { loading, products, error } = useSelector((state) => state.products);
@@ -33,60 +26,57 @@ const ProductsGrid = () => {
     alert.success("Productos cargados");
   }, [dispatch]);
 
-  console.log(products)
+  console.log(products);
 
   return (
     <>
       {loading ? (
         <LinearProgress />
       ) : (
-        <div className="products-grid">
-          <Box m={5}>
-            <Box
-              m={0}
-              pt={0}
-              display="flex"
-              alignItems="center"
-              justifyContent="center"
-            >
-              <Typography
-                component="strong"
-                mb={4}
-                variant="h2"
-                align="center"
-                style={{
-                  color: "#12284C",
-                  paddingTop: "0px",
-                  fontFamily: "Nunito Sans",
-                }}
-              >
-                Productos
-              </Typography>
-            </Box>
-            <Grid container spacing={6}>
-              {products.map((ProductData) => (
-                <Grid item key={ProductData.id} xl={3} lg={4} md={6} sm={6}>
-                  <Item>
-                    <ProductCard
-                      id={ProductData._id}
-                      sku={ProductData.sku}
-                      title={ProductData.title}
-                      subtitle={ProductData.subtitle}
-                      image={ProductData.image}
-                      category={ProductData.category}
-                      description={ProductData.description}
-                      ingredients={ProductData.ingredients}
-                      price={ProductData.price}
-                      rating={ProductData.rating}
-                      timeLeft={ProductData.timeLeft}
-                      totalSales={ProductData.totalSales}
-                    />
-                  </Item>
-                </Grid>
-              ))}
-            </Grid>
-          </Box>
-        </div>
+        <CContainer
+          fluid
+          className="mt-4 mb-4 d-flex flex-column justify-content-center align-items-center"
+        >
+          <Typography
+            component="strong"
+            variant="h2"
+            align="center"
+            style={{
+              color: "#12284C",
+              paddingTop: "0px",
+              fontFamily: "Nunito Sans",
+            }}
+          >
+            Productos
+          </Typography>
+          <CRow
+            className="m-3"
+            xs={{ cols: 1, gutter: 4 }}
+            sm={{ cols: 2 }}
+            md={{ cols: 3 }}
+            xl={{ cols: 4 }}
+            xxl={{ cols: 5 }}
+          >
+            {products.map((ProductData) => (
+              <CCol xs key={ProductData._id}>
+                <ProductCard
+                  id={ProductData._id}
+                  sku={ProductData.sku}
+                  title={ProductData.title}
+                  subtitle={ProductData.subtitle}
+                  image={ProductData.image}
+                  category={ProductData.category}
+                  description={ProductData.description}
+                  ingredients={ProductData.ingredients}
+                  price={ProductData.price}
+                  rating={ProductData.rating}
+                  timeLeft={ProductData.timeLeft}
+                  totalSales={ProductData.totalSales}
+                />
+              </CCol>
+            ))}
+          </CRow>
+        </CContainer>
       )}
     </>
   );
