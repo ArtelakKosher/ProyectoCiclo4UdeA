@@ -20,6 +20,7 @@ import CurrencyFormat from "react-currency-format";
 import "../../assets/styles/product.css";
 
 import { Button } from "semantic-ui-react";
+import 'semantic-ui-css/semantic.min.css'
 import { Link } from "react-router-dom";
 
 import { FaShoppingCart } from "react-icons/fa";
