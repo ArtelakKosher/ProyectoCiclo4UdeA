@@ -6,3 +6,11 @@
     box-sizing: border-box;
     font-family: 'Nunito',sans-serif;
 }
+
+:root {
+    --artelak-blue: #12284c;
+    --artelak-lightblue: #dce0e5;
+    --artelak-ocre: #cc9e6a;
+    --artelak-lightocre: #f2d9c7;
+  }
+
