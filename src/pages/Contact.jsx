@@ -125,7 +125,7 @@ const Contact = () => {
                 >
                   <FormControl id="name">
                     <FormLabel>Nombre: </FormLabel>
-                    <Input type="text" placeholder="Ahmad" rounded="md" />
+                    <Input type="text" placeholder="Ingresa tu nombre" rounded="md" />
                   </FormControl>
                   <FormControl id="email">
                     <FormLabel>Correo:</FormLabel>
