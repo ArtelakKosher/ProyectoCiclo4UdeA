@@ -27,7 +27,7 @@ const Home = () => {
           <Row>
             <Col lg="6" md="6">
               <div className="order-now__content  ">
-                <h5 className="mb-3" style={{color:"#12284C"}}>Realiza tu pedido facilmente</h5>
+                <h5 className="mb-3" style={{color:"#12284C"}}>Realiza tu pedido fácilmente</h5>
                 <h1 className="mb-4 order-now__title" style={{color:"#12284C"}}>
                   <span>¿Con antojos?</span> Porqué no darte <br /> un gusto
                   <span> ahora.</span>
