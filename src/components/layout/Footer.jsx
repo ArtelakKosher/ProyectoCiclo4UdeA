@@ -19,7 +19,7 @@ const Footer = () => {
           </div>
           <div className="terms">
             <p>
-              Así que, tómate tu tiempo, mira alrededor y entérate de todo lo
+              Tómate tu tiempo, mira alrededor y entérate de todo lo
               que hay para saber sobre nosotros.
               <br />
               Esperamos que disfrutes nuestro sitio web, pues fue hecho con
