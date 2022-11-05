@@ -22,18 +22,24 @@ const Home = () => {
     <>
       <MetaData title="Inicio" />
       <section>
-        <br />
         <Container>
           <Row>
             <Col lg="6" md="6">
               <div className="order-now__content  ">
-                <h5 className="mb-3" style={{color:"#12284C"}}>Realiza tu pedido fácilmente</h5>
-                <h1 className="mb-4 order-now__title" style={{color:"#12284C"}}>
+                <h5 className="mb-3" style={{ color: "#12284C" }}>
+                  Realiza tu pedido fácilmente
+                </h5>
+                <h1
+                  className="mb-4 order-now__title"
+                  style={{ color: "#12284C" }}
+                >
                   <span>¿Con antojos?</span> Porqué no darte <br /> un gusto
                   <span> ahora.</span>
                 </h1>
 
-                <p style={{color:"#12284C"}}>¡Descubre los deliciosos sabores de nuestros productos!</p>
+                <p style={{ color: "#12284C" }}>
+                  ¡Descubre los deliciosos sabores de nuestros productos!
+                </p>
 
                 <div className="order-now__btns d-flex align-items-center gap-5 mt-4">
                   <button className="order__btn d-flex align-items-center justify-content-between">
@@ -103,26 +109,30 @@ const Home = () => {
 
             <Col lg="6" md="6">
               <div className="why__artelak">
-                <h2 className="artelak__title mb-4" style={{color:"#12284C"}}>
-                  ¿Por qué <span>Artelak</span>?
-                </h2>
-                <p className="artelak__desc" style={{color:"#12284C"}}>
+                <h1
+                  className="mb-4 order-now__title"
+                  style={{ color: "#12284C" }}
+                >
+                  ¿Por qué
+                  <span> Artelak</span>?
+                </h1>
+                <p className="artelak__desc" style={{ color: "#12284C" }}>
                   Porque necesitamos productos reales, procesos honestos y
                   rigurosos que permitan contribuir con una alimentación rica en
-                  valores nutricionales. 
+                  valores nutricionales.
                   <br />
                   <br />
-                  Nuestros productos hablan de nuestros
-                  valores, esos que nuestra familia nos ha inculcado y ese valor
-                  agregado sí que hace competencia. 
+                  Nuestros productos hablan de nuestros valores, esos que
+                  nuestra familia nos ha inculcado y ese valor agregado sí que
+                  hace competencia.
                   <br />
                   <br />
-                  No nos interesa lucrarnos por engañar a nuestros clientes, nos 
-                  interesa un negocio justo, donde el comprador recibe lo que se 
-                  le ofrece. Un comprador exigente que tiene conciencia y 
-                  entendimiento de llevar a su hogar productos que cuiden su salud. 
-                  All fin y al cabo saldrá más costoso curar una enfermedad que 
-                  prevenirla con comida de verdad.
+                  No nos interesa lucrarnos por engañar a nuestros clientes, nos
+                  interesa un negocio justo, donde el comprador recibe lo que se
+                  le ofrece. Un comprador exigente que tiene conciencia y
+                  entendimiento de llevar a su hogar productos que cuiden su
+                  salud. All fin y al cabo saldrá más costoso curar una
+                  enfermedad que prevenirla con comida de verdad.
                 </p>
 
                 <ListGroup className="mt-4">
@@ -140,7 +150,9 @@ const Home = () => {
                       <RiCheckboxCircleFill size={25} /> Productos de calidad
                     </p>
                     <p className="choose__us-desc">
-                      Contamos con certificación Kosher Jalav Israel. Nuestra producción es responsable, apoyamos el silvo-pastoreo, práctica verde.
+                      Contamos con certificación Kosher Jalav Israel. Nuestra
+                      producción es responsable, apoyamos el silvo-pastoreo,
+                      práctica verde.
                     </p>
                   </ListGroupItem>
 
@@ -149,7 +161,9 @@ const Home = () => {
                       <RiCheckboxCircleFill size={25} /> Atención personalizada
                     </p>
                     <p className="choose__us-desc">
-                      Nos encargamos de realizar seguimiento desde la tu solicitud de pedido, hasta que llegue a la puerta de tu casa.
+                      Nos encargamos de realizar seguimiento desde la tu
+                      solicitud de pedido, hasta que llegue a la puerta de tu
+                      casa.
                     </p>
                   </ListGroupItem>
                 </ListGroup>
