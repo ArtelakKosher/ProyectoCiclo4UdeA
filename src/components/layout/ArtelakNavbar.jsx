@@ -75,6 +75,25 @@ const SearchBarButton = styled("div")(() => ({
   alignItems: "center",
 }));
 
+const StyledList = styled(List)({
+  // selected and (selected + hover) states
+  '&& .Mui-selected, && .Mui-selected:hover': {
+    borderRadius: "5px",
+    backgroundColor: '#cc9e6a',
+    '&, & .MuiListItemIcon-root': {
+      color: 'white',
+    },
+  },
+  // hover states
+  '& .MuiListItemButton-root:hover': {
+    borderRadius: "5px",
+    backgroundColor: '#cc9e6a',
+    '&, & .MuiListItemIcon-root': {
+      color: 'ywhite',
+    },
+  },
+});
+
 const ArtelakNavbar = () => {
   const theme = useTheme();
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
@@ -106,7 +125,7 @@ const ArtelakNavbar = () => {
                 </IconButton>
                 <ArtelakLogoWrapper>
                   <ChakraProvider>
-                    <Image src={imgLogo} alt="Logo" height="40px"/>
+                    <Image src={imgLogo} alt="Logo" height="40px" />
                   </ChakraProvider>
                 </ArtelakLogoWrapper>
               </div>
@@ -132,7 +151,6 @@ const ArtelakNavbar = () => {
                   <Badge
                     badgeContent={1}
                     sx={{
-
                       "& .MuiBadge-badge": {
                         right: -5,
                         color: "white",
@@ -188,8 +206,13 @@ const ArtelakNavbar = () => {
               </IconButton>
             </DrawerHeader>
             <Divider style={{ background: "white" }} />
-            <List style={{ color: "white" }}>
-              <ListItem component={Link} to="/home" disablePadding style={{ textDecoration: "none", color: "white" }}>
+            <StyledList>
+              <ListItem
+                component={Link}
+                to="/home"
+                disablePadding
+                style={{ textDecoration: "none", color: "white" }}
+              >
                 <ListItemButton>
                   <ListItemIcon style={{ color: "white" }}>
                     <FaHome />
@@ -197,7 +220,12 @@ const ArtelakNavbar = () => {
                   <ListItemText primary="Inicio" />
                 </ListItemButton>
               </ListItem>
-              <ListItem component={Link} to="/login" disablePadding style={{ textDecoration: "none", color: "white" }}>
+              <ListItem
+                component={Link}
+                to="/login"
+                disablePadding
+                style={{ textDecoration: "none", color: "white" }}
+              >
                 <ListItemButton>
                   <ListItemIcon style={{ color: "white" }}>
                     <GoSignIn />
@@ -205,7 +233,12 @@ const ArtelakNavbar = () => {
                   <ListItemText primary="Ingresar" />
                 </ListItemButton>
               </ListItem>
-              <ListItem component={Link} to="/products" disablePadding style={{ textDecoration: "none", color: "white" }}>
+              <ListItem
+                component={Link}
+                to="/products"
+                disablePadding
+                style={{ textDecoration: "none", color: "white" }}
+              >
                 <ListItemButton>
                   <ListItemIcon style={{ color: "white" }}>
                     <FaBoxes />
@@ -213,7 +246,12 @@ const ArtelakNavbar = () => {
                   <ListItemText primary="Productos" />
                 </ListItemButton>
               </ListItem>
-              <ListItem component={Link} to="/favorites" disablePadding style={{ textDecoration: "none", color: "white" }}>
+              <ListItem
+                component={Link}
+                to="/favorites"
+                disablePadding
+                style={{ textDecoration: "none", color: "white" }}
+              >
                 <ListItemButton>
                   <ListItemIcon style={{ color: "white" }}>
                     <FaHeart />
@@ -221,7 +259,12 @@ const ArtelakNavbar = () => {
                   <ListItemText primary="Favoritos" />
                 </ListItemButton>
               </ListItem>
-              <ListItem component={Link} to="/cart" disablePadding style={{ textDecoration: "none", color: "white" }}>
+              <ListItem
+                component={Link}
+                to="/cart"
+                disablePadding
+                style={{ textDecoration: "none", color: "white" }}
+              >
                 <ListItemButton>
                   <ListItemIcon style={{ color: "white" }}>
                     <FaShoppingCart />
@@ -229,7 +272,12 @@ const ArtelakNavbar = () => {
                   <ListItemText primary="Carrito" />
                 </ListItemButton>
               </ListItem>
-              <ListItem component={Link} to="/contact" disablePadding style={{ textDecoration: "none", color: "white" }}>
+              <ListItem
+                component={Link}
+                to="/contact"
+                disablePadding
+                style={{ textDecoration: "none", color: "white" }}
+              >
                 <ListItemButton>
                   <ListItemIcon style={{ color: "white" }}>
                     <FaAddressBook />
@@ -237,15 +285,20 @@ const ArtelakNavbar = () => {
                   <ListItemText primary="Contácto" />
                 </ListItemButton>
               </ListItem>
-              <ListItem component={Link} to="#" disablePadding style={{ textDecoration: "none", color: "white" }}>
+              <ListItem
+                component={Link}
+                to="#"
+                disablePadding
+                style={{ textDecoration: "none", color: "white" }}
+              >
                 <ListItemButton>
                   <ListItemIcon style={{ color: "white" }}>
                     <GoSignOut />
                   </ListItemIcon>
-                  <ListItemText primary="Salir"/>
+                  <ListItemText primary="Salir" />
                 </ListItemButton>
               </ListItem>
-            </List>
+            </StyledList>
           </Box>
         </Drawer>
       </StyledEngineProvider>
