@@ -1,15 +1,13 @@
-import "./App.css";
-import Layout from "./components/layout/layout";
+import { Layout } from "../src/components/layout/Layout";
+import ArtelakNavbar from "./components/layout/ArtelakNavbar";
 import { BrowserRouter as Router } from "react-router-dom";
 
-function App() {
+export default function App() {
   return (
     <Router>
-      <div className="App">
-        <Layout />
-      </div>
+      <Layout>
+        <ArtelakNavbar />
+      </Layout>
     </Router>
   );
 }
-
-export default App;

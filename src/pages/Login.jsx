@@ -43,7 +43,7 @@ const Login = () => {
                 Inicia sesión en tu cuenta
               </Heading>
               <Text align={"center"} fontSize={"lg"} color={"#12284C"}>
-                Y disfruta de todas las funciones de la página
+                y disfruta de todas las funciones de la página
               </Text>
             </Stack>
             <Box
@@ -74,7 +74,7 @@ const Login = () => {
                       style={{ fontWeight: "bold" }}
                       _hover={{ textDecoration: "none", color: "brand.300" }}
                     >
-                      Registrarse
+                      Crear una cuenta
                     </Link>
                     <Link
                       as={ReachLink}

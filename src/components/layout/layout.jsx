@@ -1,20 +1,15 @@
-import React from "react";
-import "../../assets/styles/main.css";
-import Routes from "../../routes/Routers";
+import { Content } from "./Content"
+import { Box } from "./Box";
+import Footer from "./Footer"
 
-import Header from "../common/Header";
-import Footer from "../common/Footer";
-
-const layout = () => {
-  return (
-    <>
-      <Header />
-      <main>
-        <Routes />
-      </main>
-      <Footer />
-    </>
-  );
-};
-
-export default layout;
+export const Layout = ({ children }) => (
+  <Box
+    css={{
+      maxW: "100%"
+    }}
+  >
+    {children}
+    <Content />
+    <Footer />
+  </Box>
+);
