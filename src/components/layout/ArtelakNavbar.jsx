@@ -42,7 +42,7 @@ import { Image, ChakraProvider } from "@chakra-ui/react";
 
 import imgLogo from "/images/logo/artelak20cm.png";
 
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const DrawerHeader = styled("div")(({ theme }) => ({
   display: "flex",
@@ -77,19 +77,19 @@ const SearchBarButton = styled("div")(() => ({
 
 const StyledList = styled(List)({
   // selected and (selected + hover) states
-  '&& .Mui-selected, && .Mui-selected:hover': {
+  "&& .Mui-selected, && .Mui-selected:hover": {
     borderRadius: "5px",
-    backgroundColor: '#cc9e6a',
-    '&, & .MuiListItemIcon-root': {
-      color: 'white',
+    backgroundColor: "#cc9e6a",
+    "&, & .MuiListItemIcon-root": {
+      color: "white",
     },
   },
   // hover states
-  '& .MuiListItemButton-root:hover': {
+  "& .MuiListItemButton-root:hover": {
     borderRadius: "5px",
-    backgroundColor: '#cc9e6a',
-    '&, & .MuiListItemIcon-root': {
-      color: 'ywhite',
+    backgroundColor: "#cc9e6a",
+    "&, & .MuiListItemIcon-root": {
+      color: "ywhite",
     },
   },
 });
@@ -97,6 +97,8 @@ const StyledList = styled(List)({
 const ArtelakNavbar = () => {
   const theme = useTheme();
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+  const location = useLocation();
+
   return (
     <>
       <StyledEngineProvider injectFirst>
@@ -144,6 +146,9 @@ const ArtelakNavbar = () => {
                 <IconNavLink to="/home">
                   <FaHome size={25} />
                 </IconNavLink>
+                <IconNavLink to="/login">
+                  <FaUser size={25} />
+                </IconNavLink>
                 <IconNavLink to="/products">
                   <FaBoxes size={25} />
                 </IconNavLink>
@@ -151,6 +156,7 @@ const ArtelakNavbar = () => {
                   <Badge
                     badgeContent={1}
                     sx={{
+                      marginRight: "10px",
                       "& .MuiBadge-badge": {
                         right: -5,
                         color: "white",
@@ -160,9 +166,6 @@ const ArtelakNavbar = () => {
                   >
                     <FaShoppingCart size={25} />
                   </Badge>
-                </IconNavLink>
-                <IconNavLink to="/login">
-                  <FaUser size={25} />
                 </IconNavLink>
               </div>
             </div>
@@ -210,8 +213,14 @@ const ArtelakNavbar = () => {
               <ListItem
                 component={Link}
                 to="/home"
+                selected={"/home" === location.pathname}
+                onClick={() => setIsDrawerOpen(false)}
                 disablePadding
-                style={{ textDecoration: "none", color: "white" }}
+                style={{
+                  textDecoration: "none",
+                  color: "white",
+                  marginTop: "10px",
+                }}
               >
                 <ListItemButton>
                   <ListItemIcon style={{ color: "white" }}>
@@ -223,8 +232,14 @@ const ArtelakNavbar = () => {
               <ListItem
                 component={Link}
                 to="/login"
+                selected={"/login" === location.pathname}
+                onClick={() => setIsDrawerOpen(false)}
                 disablePadding
-                style={{ textDecoration: "none", color: "white" }}
+                style={{
+                  textDecoration: "none",
+                  color: "white",
+                  marginTop: "10px",
+                }}
               >
                 <ListItemButton>
                   <ListItemIcon style={{ color: "white" }}>
@@ -236,8 +251,14 @@ const ArtelakNavbar = () => {
               <ListItem
                 component={Link}
                 to="/products"
+                selected={"/products" === location.pathname}
+                onClick={() => setIsDrawerOpen(false)}
                 disablePadding
-                style={{ textDecoration: "none", color: "white" }}
+                style={{
+                  textDecoration: "none",
+                  color: "white",
+                  marginTop: "10px",
+                }}
               >
                 <ListItemButton>
                   <ListItemIcon style={{ color: "white" }}>
@@ -249,8 +270,14 @@ const ArtelakNavbar = () => {
               <ListItem
                 component={Link}
                 to="/favorites"
+                selected={"/favorites" === location.pathname}
+                onClick={() => setIsDrawerOpen(false)}
                 disablePadding
-                style={{ textDecoration: "none", color: "white" }}
+                style={{
+                  textDecoration: "none",
+                  color: "white",
+                  marginTop: "10px",
+                }}
               >
                 <ListItemButton>
                   <ListItemIcon style={{ color: "white" }}>
@@ -262,8 +289,14 @@ const ArtelakNavbar = () => {
               <ListItem
                 component={Link}
                 to="/cart"
+                selected={"/cart" === location.pathname}
+                onClick={() => setIsDrawerOpen(false)}
                 disablePadding
-                style={{ textDecoration: "none", color: "white" }}
+                style={{
+                  textDecoration: "none",
+                  color: "white",
+                  marginTop: "10px",
+                }}
               >
                 <ListItemButton>
                   <ListItemIcon style={{ color: "white" }}>
@@ -275,8 +308,14 @@ const ArtelakNavbar = () => {
               <ListItem
                 component={Link}
                 to="/contact"
+                selected={"/contact" === location.pathname}
+                onClick={() => setIsDrawerOpen(false)}
                 disablePadding
-                style={{ textDecoration: "none", color: "white" }}
+                style={{
+                  textDecoration: "none",
+                  color: "white",
+                  marginTop: "10px",
+                }}
               >
                 <ListItemButton>
                   <ListItemIcon style={{ color: "white" }}>
@@ -288,8 +327,14 @@ const ArtelakNavbar = () => {
               <ListItem
                 component={Link}
                 to="#"
+                selected={"#" === location.pathname}
+                onClick={() => setIsDrawerOpen(false)}
                 disablePadding
-                style={{ textDecoration: "none", color: "white" }}
+                style={{
+                  textDecoration: "none",
+                  color: "white",
+                  marginTop: "10px",
+                }}
               >
                 <ListItemButton>
                   <ListItemIcon style={{ color: "white" }}>
