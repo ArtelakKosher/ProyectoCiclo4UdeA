@@ -27,7 +27,7 @@ const Search = () => {
           placeholder="Buscar productos (e.j. queso)"
           onChange={(e) => setKeyword(e.target.value)}
         />
-        <SearchBarButton type="submit">
+        <SearchBarButton type="submit" onClick={searchHandler}>
           <FaSearch size={25} />
         </SearchBarButton>
       </SearchBar>
