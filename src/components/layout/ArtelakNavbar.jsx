@@ -44,6 +44,9 @@ import imgLogo from "/images/logo/artelak20cm.png";
 
 import { Link, useLocation } from "react-router-dom";
 
+import { MdDashboard } from "react-icons/md";
+
+
 const DrawerHeader = styled("div")(({ theme }) => ({
   display: "flex",
   alignItems: "center",
@@ -224,7 +227,7 @@ const ArtelakNavbar = () => {
               >
                 <ListItemButton>
                   <ListItemIcon style={{ color: "white" }}>
-                    <FaHome />
+                    <FaHome size={25}/>
                   </ListItemIcon>
                   <ListItemText primary="Inicio" />
                 </ListItemButton>
@@ -243,7 +246,7 @@ const ArtelakNavbar = () => {
               >
                 <ListItemButton>
                   <ListItemIcon style={{ color: "white" }}>
-                    <GoSignIn />
+                    <GoSignIn size={25}/>
                   </ListItemIcon>
                   <ListItemText primary="Ingresar" />
                 </ListItemButton>
@@ -262,7 +265,7 @@ const ArtelakNavbar = () => {
               >
                 <ListItemButton>
                   <ListItemIcon style={{ color: "white" }}>
-                    <FaBoxes />
+                    <FaBoxes size={25}/>
                   </ListItemIcon>
                   <ListItemText primary="Productos" />
                 </ListItemButton>
@@ -281,7 +284,7 @@ const ArtelakNavbar = () => {
               >
                 <ListItemButton>
                   <ListItemIcon style={{ color: "white" }}>
-                    <FaHeart />
+                    <FaHeart size={25}/>
                   </ListItemIcon>
                   <ListItemText primary="Favoritos" />
                 </ListItemButton>
@@ -300,7 +303,7 @@ const ArtelakNavbar = () => {
               >
                 <ListItemButton>
                   <ListItemIcon style={{ color: "white" }}>
-                    <FaShoppingCart />
+                    <FaShoppingCart size={25}/>
                   </ListItemIcon>
                   <ListItemText primary="Carrito" />
                 </ListItemButton>
@@ -319,7 +322,7 @@ const ArtelakNavbar = () => {
               >
                 <ListItemButton>
                   <ListItemIcon style={{ color: "white" }}>
-                    <FaAddressBook />
+                    <FaAddressBook size={25}/>
                   </ListItemIcon>
                   <ListItemText primary="Contácto" />
                 </ListItemButton>
@@ -338,9 +341,28 @@ const ArtelakNavbar = () => {
               >
                 <ListItemButton>
                   <ListItemIcon style={{ color: "white" }}>
-                    <GoSignOut />
+                    <GoSignOut size={25}/>
                   </ListItemIcon>
                   <ListItemText primary="Salir" />
+                </ListItemButton>
+              </ListItem>
+              <ListItem
+                component={Link}
+                to="/dashboard"
+                selected={"/dashboard" === location.pathname}
+                onClick={() => setIsDrawerOpen(false)}
+                disablePadding
+                style={{
+                  textDecoration: "none",
+                  color: "white",
+                  marginTop: "10px",
+                }}
+              >
+                <ListItemButton>
+                  <ListItemIcon style={{ color: "white" }}>
+                    <MdDashboard size={25}/>
+                  </ListItemIcon>
+                  <ListItemText primary="Dashboard" />
                 </ListItemButton>
               </ListItem>
             </StyledList>

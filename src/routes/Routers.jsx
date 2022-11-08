@@ -13,6 +13,9 @@ import Signup from "../pages/Signup";
 import ForgotPassword from "../pages/ForgotPassword";
 import ResetPassword from "../pages/ResetPassword";
 import Shipment from "../pages/Shipment";
+import Dashboard from "../pages/admin/Dashboard";
+import ProductsList from "../pages/admin/ProductList";
+import NewProduct from "../pages/admin/NewProduct";
 
 const Routers = () => {
   return (
@@ -30,6 +33,9 @@ const Routers = () => {
       <Route path="/resetPassword" element={<ResetPassword />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/shipment" element={<Shipment />} />
+      <Route path="/dashboard" element={<Dashboard />} />
+      <Route path="/productlist" element={<ProductsList />} />
+      <Route path="/newproduct" element={<NewProduct />} />
     </Routes>
   );
 };
