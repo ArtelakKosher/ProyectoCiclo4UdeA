@@ -165,10 +165,10 @@ const Cart = () => {
             </p>
             <div className="cart__page-btn">
               <button className="addTOCart__btn me-4">
-                <Link to="/products">Seguir comprando</Link>
+                <Link to="/products" style={{ textDecoration: 'none' }}>Seguir comprando</Link>
               </button>
               <button className="addTOCart__btn">
-                <Link to="/checkout">Proceder al pago</Link>
+                <Link to="/checkout" style={{ textDecoration: 'none' }}>Proceder al pago</Link>
               </button>
             </div>
           </div>
