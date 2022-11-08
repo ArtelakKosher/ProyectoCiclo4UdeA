@@ -24,14 +24,11 @@ import {
   FaHeart,
   FaShoppingCart,
   FaAddressBook,
-  FaSearch,
   FaUser,
 } from "react-icons/fa";
 import { GoSignIn, GoSignOut } from "react-icons/go";
 
 import {
-  SearchBar,
-  SearchBarInput,
   SearchContainer,
   IconNavLink,
 } from "./ArtelakNavbarStyled";
@@ -45,6 +42,7 @@ import imgLogo from "/images/logo/artelak20cm.png";
 import { Link, useLocation } from "react-router-dom";
 
 import { MdDashboard } from "react-icons/md";
+import Search from "./Search";
 
 
 const DrawerHeader = styled("div")(({ theme }) => ({
@@ -135,15 +133,7 @@ const ArtelakNavbar = () => {
                 </ArtelakLogoWrapper>
               </div>
               <div className="appbar__search">
-                <SearchBar>
-                  <SearchBarInput
-                    type="text"
-                    placeholder="Buscar productos (e.j. queso)"
-                  />
-                  <SearchBarButton type="submit">
-                    <FaSearch size={25} />
-                  </SearchBarButton>
-                </SearchBar>
+                <Search />
               </div>
               <div className="appbar__icons">
                 <IconNavLink to="/home">
@@ -176,15 +166,7 @@ const ArtelakNavbar = () => {
         </AppBar>
 
         <SearchContainer>
-          <SearchBar>
-            <SearchBarInput
-              type="text"
-              placeholder="Buscar productos (e.j. queso)"
-            />
-            <SearchBarButton type="submit">
-              <FaSearch size={25} />
-            </SearchBarButton>
-          </SearchBar>
+          <Search />
         </SearchContainer>
 
         <Drawer

@@ -2,8 +2,6 @@ import { React, Fragment } from "react";
 import MetaData from "../../components/layout/metadata/MetaData";
 import { Link } from "react-router-dom";
 import Sidebar from "./Sidebar";
-import "../../assets/styles/dashboard.css"; 
-import "bootstrap/dist/css/bootstrap.css"
 
 const Dashboard = () => {
   return (

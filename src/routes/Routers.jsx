@@ -36,6 +36,7 @@ const Routers = () => {
       <Route path="/dashboard" element={<Dashboard />} />
       <Route path="/productlist" element={<ProductsList />} />
       <Route path="/newproduct" element={<NewProduct />} />
+      <Route path="/search/:keyword" element={<AllProducts />} />
     </Routes>
   );
 };

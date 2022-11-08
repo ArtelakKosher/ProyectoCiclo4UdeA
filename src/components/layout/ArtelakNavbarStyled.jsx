@@ -42,6 +42,7 @@ export const SearchBarInput = styled.input`
   padding-left: 15px;
   font-size: 18px;
   background-color: white;
+  color: var(--artelak-blue);
   border-radius: 20px;
 `;
 
@@ -55,6 +56,9 @@ export const SearchBarButton = styled.div`
   background: var(--artelak-ocre);
   cursor: pointer;
   border-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
 export const IconNavLink = styled(NavLink)`

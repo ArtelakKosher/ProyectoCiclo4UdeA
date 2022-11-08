@@ -4,29 +4,35 @@ import ProductCard from "./ProductCard";
 import { CCol, CContainer, CRow } from "@coreui/bootstrap-react";
 import { Typography } from "@mui/material";
 
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getProducts } from "../../actions/productActions";
 import { useAlert } from "react-alert";
 
 import LinearProgress from "@mui/material/LinearProgress";
+import Pagination from "react-js-pagination";
+
+import { useParams } from "react-router-dom";
 
 const ProductsGrid = () => {
-  const { loading, products, error } = useSelector((state) => state.products);
-  const alert = useAlert();
+  const [currentPage, setCurrentPage] = useState(1)
+    const { loading, products, error, resultsPerPage, productsCount } = useSelector(state => state.products)
+    const alert = useAlert();
+    const params = useParams();
+    const keyword = params.keyword
 
-  const dispatch = useDispatch();
+    const dispatch = useDispatch();
+    useEffect(() => {
+        if (error) {
+            return alert.error(error)
+        }
 
-  useEffect(() => {
-    if (error) {
-      return alert.error(error);
+        dispatch(getProducts(currentPage, keyword));
+    }, [dispatch, alert, error, currentPage, keyword])
+
+    function setCurrentPageNumber(pageNumber){
+        setCurrentPage(pageNumber)
     }
-
-    dispatch(getProducts());
-    alert.success("Productos cargados");
-  }, [dispatch]);
-
-  console.log(products);
 
   return (
     <>
@@ -76,6 +82,18 @@ const ProductsGrid = () => {
               </CCol>
             ))}
           </CRow>
+          <Pagination
+            activePage={currentPage}
+            itemsCountPerPage={resultsPerPage}
+            totalItemsCount={productsCount}
+            onChange={setCurrentPageNumber}
+            nextPageText={"Siguiente"}
+            prevPageText={"Anterior"}
+            firstPageText={"Primera"}
+            lastPageText={"Última"}
+            itemClass="page-item"
+            linkClass="page-link"
+          />
         </CContainer>
       )}
     </>
