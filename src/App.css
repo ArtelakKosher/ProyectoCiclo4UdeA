@@ -465,7 +465,7 @@ footer {
 }
 
 /* Pagination */
-.page-item.active{
+.page-item.active .page-link{
   background-color: var(--artelak-ocre);
   border-color: var(--artelak-ocre);
   color: white;
