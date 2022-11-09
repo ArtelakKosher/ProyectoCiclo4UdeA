@@ -468,7 +468,7 @@ footer {
 .page-item.active .page-link{
   background-color: var(--artelak-ocre);
   border-color: var(--artelak-ocre);
-  color: white;
+  color: var(--artelak-blue);
 }
 
 .page-link {
