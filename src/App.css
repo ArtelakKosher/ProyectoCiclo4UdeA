@@ -465,14 +465,16 @@ footer {
 }
 
 /* Pagination */
-.page-item.active .page-link {
+.page-item.active{
   background-color: var(--artelak-ocre);
   border-color: var(--artelak-ocre);
   color: white;
 }
 
 .page-link {
-  color: var(--artelak-blue);
+  background-color: var(--artelak-blue);
+  border-color: var(--artelak-blue);
+  color: white;
 }
 
 .page-link:hover {
