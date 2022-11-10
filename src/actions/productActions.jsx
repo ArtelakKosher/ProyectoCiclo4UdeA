@@ -17,7 +17,7 @@ export const getProducts =
       dispatch({ type: ALL_PRODUCTS_REQUEST });
 
       const { data } = await axios.get(
-        `https://artelak-backend.herokuapp.com/api/products?keyword=${keyword}&page=${currentPage}`
+        `https://web-production-1acd.up.railway.app/api/products?keyword=${keyword}&page=${currentPage}`
       );
 
       {
@@ -43,7 +43,7 @@ export const getProductDetails = (id) => async (dispatch) => {
     dispatch({ type: PRODUCT_DETAILS_REQUEST });
 
     const { data } = await axios.get(
-      `https://artelak-backend.herokuapp.com/api/product/${id}`
+      `https://web-production-1acd.up.railway.app/api/product/${id}`
     );
 
     {
