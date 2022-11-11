@@ -11,14 +11,14 @@ import {
 } from "../constants/productConstants";
 
 export const getProducts =
-  (currentPage = 1, keyword = "") =>
+  (currentPage = 1, keyword = "", price) =>
   async (dispatch) => {
     try {
       dispatch({ type: ALL_PRODUCTS_REQUEST });
 
-      const { data } = await axios.get(
-        `https://web-production-1acd.up.railway.app/api/products?keyword=${keyword}&page=${currentPage}`
-      );
+      let link=`https://artelak.up.railway.app/api/products?keyword=${keyword}&page=${currentPage}&price[gte]=${price[0]}&price[lte]=${price[1]}`
+
+      const { data } = await axios.get(link);
 
       {
         /* console.log(data) */
@@ -43,7 +43,7 @@ export const getProductDetails = (id) => async (dispatch) => {
     dispatch({ type: PRODUCT_DETAILS_REQUEST });
 
     const { data } = await axios.get(
-      `https://web-production-1acd.up.railway.app/api/product/${id}`
+      `https://artelak.up.railway.app/api/product/${id}`
     );
 
     {

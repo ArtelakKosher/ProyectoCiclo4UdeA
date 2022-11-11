@@ -14,25 +14,30 @@ import Pagination from "react-js-pagination";
 
 import { useParams } from "react-router-dom";
 
+import Slider from "rc-slider";
+import "rc-slider/assets/index.css";
+
 const ProductsGrid = () => {
-  const [currentPage, setCurrentPage] = useState(1)
-    const { loading, products, error, resultsPerPage, productsCount } = useSelector(state => state.products)
-    const alert = useAlert();
-    const params = useParams();
-    const keyword = params.keyword
+  const [currentPage, setCurrentPage] = useState(1);
+  const [price, setPrice] = useState([1000, 100000]);
+  const { loading, products, error, resultsPerPage, productsCount } =
+    useSelector((state) => state.products);
+  const alert = useAlert();
+  const params = useParams();
+  const keyword = params.keyword;
 
-    const dispatch = useDispatch();
-    useEffect(() => {
-        if (error) {
-            return alert.error(error)
-        }
-
-        dispatch(getProducts(currentPage, keyword));
-    }, [dispatch, alert, error, currentPage, keyword])
-
-    function setCurrentPageNumber(pageNumber){
-        setCurrentPage(pageNumber)
+  const dispatch = useDispatch();
+  useEffect(() => {
+    if (error) {
+      return alert.error(error);
     }
+
+    dispatch(getProducts(currentPage, keyword, price));
+  }, [dispatch, alert, error, currentPage, keyword, price]);
+
+  function setCurrentPageNumber(pageNumber) {
+    setCurrentPage(pageNumber);
+  }
 
   return (
     <>
@@ -43,6 +48,25 @@ const ProductsGrid = () => {
           fluid
           className="mt-4 mb-4 d-flex flex-column justify-content-center align-items-center"
         >
+          <Slider
+            range
+            className="t-slider"
+            marks={{
+              1000: `$1000`,
+              100000: `$100000`,
+            }}
+            min={1000}
+            max={100000}
+            defaultValue={[1000, 100000]}
+            tipFormatter={(value) => `$${value}`}
+            tipProps={{
+              placement: "top",
+              prefixCls: "rc-slider-tooltip",
+              visible: true,
+            }}
+            value={price}
+            onChange={(price) => setPrice(price)}
+          ></Slider>
           <Typography
             component="strong"
             variant="h2"
