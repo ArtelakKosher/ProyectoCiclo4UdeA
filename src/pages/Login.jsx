@@ -19,6 +19,14 @@ import {
 
 import { Link as ReachLink } from "react-router-dom";
 
+import { useState } from "react";
+import { clearErrors, login } from "../actions/userActions";
+import { useDispatch, useSelector } from "react-redux";
+import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+
+import LinearProgress from "@mui/material/LinearProgress";
+
 const theme = extendTheme({
   colors: {
     brand: {
@@ -31,9 +39,34 @@ const theme = extendTheme({
 });
 
 const Login = () => {
+  const navigate = useNavigate();
+  const [email, setEmail] = useState("");
+  const [password,setPassword] = useState("");
+  const dispatch = useDispatch();
+  const {isAuthenticated, error, loading} = useSelector (state => state.authUser)
+
+  useEffect(()=>{
+    if (isAuthenticated){
+      navigate("/");
+    }
+    if (error){
+      dispatch(clearErrors)
+    }
+  },[dispatch, isAuthenticated, error])
+
+  const submitHandler = (e) => {
+    e.preventDefault();
+    dispatch(login(email,password))
+  }
+
   return (
+    
     <>
       <MetaData title="Ingresar" />
+
+      {loading ? (
+        <LinearProgress />
+      ) : (
 
       <ChakraProvider theme={theme}>
         <Flex minH={"50vh"} align={"center"} justify={"center"}>
@@ -52,14 +85,15 @@ const Login = () => {
               boxShadow={"lg"}
               p={8}
             >
+              <form onSubmit={submitHandler}>
               <Stack spacing={4} color="#12284C">
-                <FormControl id="email">
+                <FormControl id="email" isRequired>
                   <FormLabel>E-mail:</FormLabel>
-                  <Input type="email" />
+                  <Input type="email" placeholder="tu-correo@email.com" onChange={(e) => setEmail(e.target.value)}/>
                 </FormControl>
-                <FormControl id="password">
-                  <FormLabel>Contraseña:</FormLabel>
-                  <Input type="password" />
+                <FormControl id="password" isRequired>
+                  <FormLabel >Contraseña:</FormLabel>
+                  <Input type="password" placeholder="********" onChange={(e) => setPassword(e.target.value)}/>
                 </FormControl>
                 <Stack spacing={10}>
                   <Stack
@@ -87,6 +121,7 @@ const Login = () => {
                     </Link>
                   </Stack>
                   <Button
+                    type="submit"
                     bg={"#12284C"}
                     color={"white"}
                     _hover={{
@@ -97,10 +132,12 @@ const Login = () => {
                   </Button>
                 </Stack>
               </Stack>
+              </form>
             </Box>
           </Stack>
         </Flex>
       </ChakraProvider>
+      )}
     </>
   );
 };

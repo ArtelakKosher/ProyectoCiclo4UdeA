@@ -52,18 +52,20 @@ const ProductsGrid = () => {
             range
             className="t-slider"
             marks={{
-              1000: `$1000`,
-              100000: `$100000`,
+              6000: `$6000`,
+              38000: `$38000`,
             }}
-            min={1000}
-            max={100000}
-            defaultValue={[1000, 100000]}
+            min={6000}
+            max={38000}
+            defaultValue={[6000, 38000]}
             tipFormatter={(value) => `$${value}`}
             tipProps={{
               placement: "top",
               prefixCls: "rc-slider-tooltip",
               visible: true,
             }}
+            step={1000}
+            dots
             value={price}
             onChange={(price) => setPrice(price)}
           ></Slider>
